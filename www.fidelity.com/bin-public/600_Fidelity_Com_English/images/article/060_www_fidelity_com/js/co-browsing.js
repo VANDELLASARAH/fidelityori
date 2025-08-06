@@ -1,1 +1,0 @@
-<script id="cobrowsescript" type="text/javascript" src="https://www.glancecdn.net/cobrowse/CobrowseJS.ashx?group=19772&site=staging" data-inputevents='{"ctrl-13":"startSession"}' data-groupid="19772" data-site="staging" charset="UTF-8"></script>
