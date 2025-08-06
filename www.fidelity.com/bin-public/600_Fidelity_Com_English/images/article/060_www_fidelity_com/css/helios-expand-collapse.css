@@ -1,0 +1,226 @@
+pvd-expand-collapse {
+  display: block;
+}
+
+.pvd-expand-collapse-root, .expand-collapse .expand-collapse--question, .pvd-expand-collapse-root:before, .expand-collapse .expand-collapse--question:before, .pvd-expand-collapse-root:after, .expand-collapse .expand-collapse--question:after {
+  box-sizing: border-box;
+}
+.pvd-expand-collapse-root *, .expand-collapse .expand-collapse--question *,
+.pvd-expand-collapse-root *:before,
+.expand-collapse .expand-collapse--question *:before,
+.pvd-expand-collapse-root *:after,
+.expand-collapse .expand-collapse--question *:after {
+  box-sizing: border-box;
+}
+.pvd-expand-collapse-root.pvd-expand-collapse--small .pvd-expand-collapse__interactive-button, .pvd-expand-collapse-root.pvd-expand-collapse--small .expand-collapse .expand-collapse--question .expand-collapse--fancyexpand span, .expand-collapse .expand-collapse--question .expand-collapse--fancyexpand .pvd-expand-collapse-root.pvd-expand-collapse--small span,
+.pvd-expand-collapse-root.pvd-expand-collapse--small .expand-collapse .expand-collapse--question .expand-collapse--fancycollapse span,
+.expand-collapse .expand-collapse--question .expand-collapse--fancycollapse .pvd-expand-collapse-root.pvd-expand-collapse--small span, .expand-collapse .pvd-expand-collapse--small.expand-collapse--question .pvd-expand-collapse__interactive-button, .expand-collapse .pvd-expand-collapse--small.expand-collapse--question .expand-collapse--fancyexpand span,
+.expand-collapse .pvd-expand-collapse--small.expand-collapse--question .expand-collapse--fancycollapse span {
+  font-size: 0.75rem;
+}
+@media (min-width: 32em) {
+  .pvd-expand-collapse-root.pvd-expand-collapse--small .pvd-expand-collapse__interactive-button, .pvd-expand-collapse-root.pvd-expand-collapse--small .expand-collapse .expand-collapse--question .expand-collapse--fancyexpand span, .expand-collapse .expand-collapse--question .expand-collapse--fancyexpand .pvd-expand-collapse-root.pvd-expand-collapse--small span,
+.pvd-expand-collapse-root.pvd-expand-collapse--small .expand-collapse .expand-collapse--question .expand-collapse--fancycollapse span,
+.expand-collapse .expand-collapse--question .expand-collapse--fancycollapse .pvd-expand-collapse-root.pvd-expand-collapse--small span, .expand-collapse .pvd-expand-collapse--small.expand-collapse--question .pvd-expand-collapse__interactive-button, .expand-collapse .pvd-expand-collapse--small.expand-collapse--question .expand-collapse--fancyexpand span,
+.expand-collapse .pvd-expand-collapse--small.expand-collapse--question .expand-collapse--fancycollapse span {
+    font-size: 0.875rem;
+  }
+}
+.pvd-expand-collapse-root.pvd-expand-collapse--large .pvd-expand-collapse__interactive-button, .pvd-expand-collapse-root.pvd-expand-collapse--large .expand-collapse .expand-collapse--question .expand-collapse--fancyexpand span, .expand-collapse .expand-collapse--question .expand-collapse--fancyexpand .pvd-expand-collapse-root.pvd-expand-collapse--large span,
+.pvd-expand-collapse-root.pvd-expand-collapse--large .expand-collapse .expand-collapse--question .expand-collapse--fancycollapse span,
+.expand-collapse .expand-collapse--question .expand-collapse--fancycollapse .pvd-expand-collapse-root.pvd-expand-collapse--large span, .expand-collapse .pvd-expand-collapse--large.expand-collapse--question .pvd-expand-collapse__interactive-button, .expand-collapse .pvd-expand-collapse--large.expand-collapse--question .expand-collapse--fancyexpand span,
+.expand-collapse .pvd-expand-collapse--large.expand-collapse--question .expand-collapse--fancycollapse span {
+  font-size: 1.125rem;
+}
+@media (min-width: 32em) {
+  .pvd-expand-collapse-root.pvd-expand-collapse--large .pvd-expand-collapse__interactive-button, .pvd-expand-collapse-root.pvd-expand-collapse--large .expand-collapse .expand-collapse--question .expand-collapse--fancyexpand span, .expand-collapse .expand-collapse--question .expand-collapse--fancyexpand .pvd-expand-collapse-root.pvd-expand-collapse--large span,
+.pvd-expand-collapse-root.pvd-expand-collapse--large .expand-collapse .expand-collapse--question .expand-collapse--fancycollapse span,
+.expand-collapse .expand-collapse--question .expand-collapse--fancycollapse .pvd-expand-collapse-root.pvd-expand-collapse--large span, .expand-collapse .pvd-expand-collapse--large.expand-collapse--question .pvd-expand-collapse__interactive-button, .expand-collapse .pvd-expand-collapse--large.expand-collapse--question .expand-collapse--fancyexpand span,
+.expand-collapse .pvd-expand-collapse--large.expand-collapse--question .expand-collapse--fancycollapse span {
+    font-size: 1.25rem;
+  }
+}
+.pvd-expand-collapse-root.pvd-expand-collapse--large .pvd-expand-collapse__heading-wrapper, .expand-collapse .pvd-expand-collapse--large.expand-collapse--question .pvd-expand-collapse__heading-wrapper {
+  padding: 0 0 0 1rem;
+}
+.pvd-expand-collapse-root.pvd-expand-collapse--large .pvd-expand-collapse__subheading-wrapper, .expand-collapse .pvd-expand-collapse--large.expand-collapse--question .pvd-expand-collapse__subheading-wrapper {
+  padding: 0 0 0 2.25rem;
+}
+.pvd-expand-collapse-root.pvd-expand-collapse--large .pvd-expand-collapse__content-wrapper, .expand-collapse .pvd-expand-collapse--large.expand-collapse--question .pvd-expand-collapse__content-wrapper {
+  padding: 0 0 0 2.25rem;
+}
+.pvd-expand-collapse-root.pvd-expand-collapse--expanded .pvd-expand-collapse__content-wrapper, .expand-collapse .pvd-expand-collapse--expanded.expand-collapse--question .pvd-expand-collapse__content-wrapper {
+  display: block;
+  height: auto;
+  overflow: auto;
+}
+.pvd-expand-collapse-root.pvd-expand-collapse--expanded .pvd-expand-collapse__icon, .expand-collapse .pvd-expand-collapse--expanded.expand-collapse--question .pvd-expand-collapse__icon {
+  transform: rotate(90deg);
+}
+.pvd-expand-collapse-root.pvd-expand-collapse--collapsed .pvd-expand-collapse__content-wrapper, .expand-collapse .pvd-expand-collapse--collapsed.expand-collapse--question .pvd-expand-collapse__content-wrapper {
+  display: none;
+  height: 0;
+  overflow: hidden;
+}
+.pvd-expand-collapse-root.pvd-expand-collapse--collapsed .pvd-expand-collapse__icon, .expand-collapse .pvd-expand-collapse--collapsed.expand-collapse--question .pvd-expand-collapse__icon {
+  transform: rotate(0deg);
+}
+.pvd-expand-collapse-root.pvd-expand-collapse--expanding .pvd-expand-collapse__content-wrapper, .expand-collapse .pvd-expand-collapse--expanding.expand-collapse--question .pvd-expand-collapse__content-wrapper {
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.pvd-expand-collapse-root.pvd-expand-collapse--expanding .pvd-expand-collapse__icon, .expand-collapse .pvd-expand-collapse--expanding.expand-collapse--question .pvd-expand-collapse__icon {
+  transform: rotate(90deg);
+}
+.pvd-expand-collapse-root.pvd-expand-collapse--collapsing .pvd-expand-collapse__content-wrapper, .expand-collapse .pvd-expand-collapse--collapsing.expand-collapse--question .pvd-expand-collapse__content-wrapper {
+  display: block;
+  overflow: hidden;
+}
+.pvd-expand-collapse-root.pvd-expand-collapse--collapsing .pvd-expand-collapse__icon, .expand-collapse .pvd-expand-collapse--collapsing.expand-collapse--question .pvd-expand-collapse__icon {
+  transform: rotate(0deg);
+}
+.pvd-expand-collapse-root .pvd-expand-collapse__interactive-button, .expand-collapse .expand-collapse--question .pvd-expand-collapse__interactive-button, .expand-collapse .expand-collapse--question .expand-collapse--fancyexpand span,
+.expand-collapse .expand-collapse--question .expand-collapse--fancycollapse span {
+  color: #000000;
+  font-family: "Fidelity Sans", Helvetica, Arial, sans;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.25;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  font-size: 0.875rem;
+  align-items: flex-start;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #317B23;
+  cursor: pointer;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+@media (min-width: 32em) {
+  .pvd-expand-collapse-root .pvd-expand-collapse__interactive-button, .expand-collapse .expand-collapse--question .pvd-expand-collapse__interactive-button, .expand-collapse .expand-collapse--question .expand-collapse--fancyexpand span,
+.expand-collapse .expand-collapse--question .expand-collapse--fancycollapse span {
+    font-size: 1rem;
+  }
+}
+.pvd-expand-collapse-root .pvd-expand-collapse__interactive-button:focus, .expand-collapse .expand-collapse--question .pvd-expand-collapse__interactive-button:focus, .expand-collapse .expand-collapse--question .expand-collapse--fancyexpand span:focus,
+.expand-collapse .expand-collapse--question .expand-collapse--fancycollapse span:focus {
+  border: 1px dotted #000000;
+  outline: none;
+}
+.pvd-expand-collapse-root [data-tag-name=pvd-scoped-icon], .expand-collapse .expand-collapse--question [data-tag-name=pvd-scoped-icon] {
+  height: 100%;
+  line-height: 0;
+  position: relative;
+}
+.pvd-expand-collapse-root .pvd-expand-collapse__icon, .expand-collapse .expand-collapse--question .pvd-expand-collapse__icon {
+  align-self: flex-start;
+  color: #317B23;
+  flex-shrink: 0;
+  height: 1.375em;
+  position: relative;
+  transition: transform 0.25s ease-out;
+}
+.pvd-expand-collapse-root .pvd-expand-collapse__icon.pvd-icon-root, .expand-collapse .expand-collapse--question .pvd-expand-collapse__icon.pvd-icon-root {
+  height: 1.375em;
+}
+.pvd-expand-collapse-root .pvd-expand-collapse__heading-wrapper, .expand-collapse .expand-collapse--question .pvd-expand-collapse__heading-wrapper {
+  align-self: center;
+  padding: 0 0 0 0.75rem;
+  position: relative;
+}
+.pvd-expand-collapse-root .pvd-expand-collapse__subheading-wrapper, .expand-collapse .expand-collapse--question .pvd-expand-collapse__subheading-wrapper {
+  margin: 0.25rem 0 0 0;
+  padding: 0 0 0 1.75rem;
+}
+.pvd-expand-collapse-root .pvd-expand-collapse__content-wrapper, .expand-collapse .expand-collapse--question .pvd-expand-collapse__content-wrapper {
+  display: block;
+  margin: 0.5rem 0 0 0;
+  padding: 0 0 0 1.75rem;
+}
+.pvd-expand-collapse-root .pvd-expand-collapse__heading, .expand-collapse .expand-collapse--question .pvd-expand-collapse__heading {
+  color: #317B23;
+}
+.pvd-expand-collapse-root .pvd-expand-collapse__subheading, .expand-collapse .expand-collapse--question .pvd-expand-collapse__subheading {
+  color: #000000;
+  font-family: "Fidelity Sans", Helvetica, Arial, sans;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  font-size: 0.75rem;
+}
+@media (min-width: 32em) {
+  .pvd-expand-collapse-root .pvd-expand-collapse__subheading, .expand-collapse .expand-collapse--question .pvd-expand-collapse__subheading {
+    font-size: 0.875rem;
+  }
+}
+.pvd-expand-collapse-root .pvd-expand-collapse__content, .expand-collapse .expand-collapse--question .pvd-expand-collapse__content {
+  color: #000000;
+  font-family: "Fidelity Sans", Helvetica, Arial, sans;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+}
+
+pvd-icon {
+  line-height: 0;
+}
+
+.pvd-icon-root {
+  display: inline-block;
+  fill: currentColor;
+  height: 1.25rem;
+  position: relative;
+  stroke: none;
+  width: 1.25rem;
+}
+.pvd-icon-root:focus {
+  outline: 1px dotted #000000;
+}
+.pvd-icon-root.pvd-icon--large {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.pvd-icon-root.pvd-icon--small {
+  height: 1rem;
+  width: 1rem;
+}
+.pvd-icon-root.pvd-icon--extra-small {
+  height: 12px;
+  width: 12px;
+}
+
+.expand-collapse .expand-collapse--question .expand-collapse--fancyexpand,
+.expand-collapse .expand-collapse--question .expand-collapse--fancycollapse {
+  background-size: 16px 24px;
+}
+.expand-collapse .expand-collapse--question .expand-collapse--fancyexpand span,
+.expand-collapse .expand-collapse--question .expand-collapse--fancycollapse span {
+  display: inline;
+}
+.expand-collapse .expand-collapse--question .expand-collapse--fancyexpand {
+  background-image: url(https://www.fidelity.com/bin-public/060_www_fidelity_com/images/arrow-right-1.svg);
+}
+.expand-collapse .expand-collapse--question .expand-collapse--fancycollapse {
+  background-image: url(https://www.fidelity.com/bin-public/060_www_fidelity_com/images/arrow-down-1.svg);
+}

@@ -1,0 +1,260 @@
+/* Global Styles */
+#wf-ovw-mini-container, #wf-pa-mini-container, #wf-pa-life-events, #wf-trade-mini-container, #wf-price-mini-container, .wf-price-master-container, #wf-tools-mini-container, #wf-tools-mini-container2, #wf-security-mini-container {font-family:"Fidelity Sans",Helvetica,Sans-serif;font-size:1rem;}
+#wf-ovw-mini-content, #wf-pa-mini-content, #wf-trade-mini-content, #wf-price-mini-content, #wf-tools-mini-content, #wf-tools-mini-content2, #wf-security-mini-content {margin-left:5%;}
+#wf-ovw-mini-container h1, #wf-pa-mini-container h1, #wf-trade-mini-container h1, #wf-price-mini-container h1, #wf-tools-mini-container h1, #wf-security-mini-container h1 {font-size:2.125em;line-height:1.25;font-weight:300;margin:0 0 0.75em 0;}
+#wf-ovw-mini-container p, #wf-pa-mini-container p, #wf-trade-mini-container p, #wf-price-mini-container p, #wf-tools-mini-container p, #wf-security-mini-container p {font-size:1.125em;line-height:1.375;font-weight:400;margin:0;}
+
+
+/* 01/17/2017 Horizonal Nav Fix  */
+.horizontal-navigation-component--list > li {border-right: .0834em solid #dbdbdb;}
+
+/* Why Fidelity - Overview */
+#wf-ovw-mini-container {max-width:71.25em;margin:0 auto;}
+#wf-ovw-mini-container h1 {width:52.5%;}
+#wf-ovw-mini-container p {width:49%;}
+	
+@media (min-width:47.5625em) {
+	#wf-ovw-mini-container {background: #FFF url('../images/fidelity/overview_L.jpg') bottom left no-repeat;background-size:cover;height:20.3125em;}
+	#wf-ovw-mini-content td {height:20.3125em;vertical-align:middle;}
+}
+@media (max-width:47.5em) and (min-width:31.3125em) {
+	#wf-ovw-mini-container {background: #FFF url('../images/fidelity/overview_M.jpg') bottom left no-repeat;background-size:cover;height:26.5625em;}
+	#wf-ovw-mini-content td  {height:26.5625em;vertical-align:middle;}
+	#wf-ovw-mini-container h1 {font-size:1.9375em !important;margin-bottom:1.25em;}
+}
+@media (max-width:31.25em) {
+	#wf-ovw-mini-container {background: #FFF url('../images/fidelity/overview_S.jpg') bottom right no-repeat;background-size:cover;padding-bottom:67%;}
+	#wf-ovw-mini-container h1 {font-size:1.75em !important;width:100%;}	
+	#wf-ovw-mini-container p {font-size:1em !important;width:100%;}
+	#wf-ovw-mini-content {margin:0;padding:2.5em 5% 0 5%;text-align:center;}
+}
+
+
+
+/* Why Fidelity - Planning & Advice */
+#wf-pa-mini-container {max-width:71.25em;margin:0 auto;}
+#wf-pa-mini-container h1 {width:50%;}
+#wf-pa-mini-container p {width:50%;}
+	
+@media (min-width:47.5625em) {
+	#wf-pa-mini-container {background: #FFF url('../images/fidelity/why-Guidance_L.jpg') bottom right no-repeat;background-size:cover;height:18.75em;}
+	#wf-pa-mini-content td {height:18.75em;vertical-align:middle;}
+}
+@media (max-width:47.5em) and (min-width:31.3125em) {
+	#wf-pa-mini-container {background: #FFF url('../images/fidelity/why-Guidance_M.jpg') bottom right no-repeat;background-size:cover;height:23.4375em;}
+	#wf-pa-mini-container h1 {font-size:1.9375em !important;margin-bottom:1.25em;}	
+	#wf-pa-mini-content td {height:23.4375em;vertical-align:middle;}
+}
+@media (max-width:31.25em) {
+	#wf-pa-mini-container {background: #FFF url('../images/fidelity/why-Guidance_S.jpg') bottom right no-repeat;background-size:cover;padding-bottom:75%;}
+	#wf-pa-mini-container h1 {width:100%;font-size:1.75em !important;margin-bottom:0.9375em;}	
+	#wf-pa-mini-container p {width:100%;font-size:1em !important;}
+	#wf-pa-mini-content {margin:0;padding:2.5em 5% 0 5%;text-align:center;}
+}
+
+
+
+/* Why Fidelity - Planning & Advice - Life Events */
+#wf-pa-life-events {padding:4em 5%;}
+#wf-pa-life-events h3 {font-size:1.5em;line-height:1.25;font-weight:400;}
+#wf-pa-life-events p {font-size:1.125em;line-height:1.375;font-weight:400;margin:1.5em 0 1.75em 0;}
+#wf-pa-life-event-list {width:100%;text-align:center;}
+#wf-pa-life-event-list li {display:inline;margin-right:1.133em;padding-right:1.133em;border-right:solid 0.0625em #CCC;font-weight:bold;font-size:1.125em;}
+.wf-pa-last-event {margin:0 !important;padding:0 !important;border:none !important;}
+.wf-pa-clear {clear:both;padding:0;margin:0;line-height:0;}
+#wf-pa-life-event-dropdown {display:none;}
+
+@media (max-width:71.666em) and (min-width:61em) {
+	#wf-pa-life-event-list li {display:inline;margin-right:0.8em;padding-right:0.8em;font-size:1em !important;}
+	#wf-pa-life-event-list .last-event {margin:0 !important;border:none;}
+}
+@media (max-width:60.999em) {
+	#wf-pa-life-event-list {display:none;}
+	#wf-pa-life-event-dropdown {display:block !important;width:50%; margin:auto auto;}
+	#wf-pa-life-event-dropdown select {width:100%;}
+}
+@media (max-width:33.333em) {
+	#wf-pa-life-events p {font-size:1em !important;margin:1.2em 0 1.6em 0;}
+	#wf-pa-life-events {padding:2.666em 5% !important;}
+}
+
+
+
+/* Why Fidelity - Trading */
+#wf-trade-mini-container {max-width:71.25em;margin:0 auto;background: #FFF url('../images/fidelity/why_Tools-bg.jpg') bottom right no-repeat;background-size:cover;}
+#wf-trade-mini-content {width:55%;float:left;}
+#wf-trade-mini-content p {margin-bottom:1.5em !important;}
+#wf-trade-img-container {margin-right:5%;width:30%;float:right;text-align:center;display:block;}
+#wf-trade-img-container img {width:100%;}
+.wf-trade-clear {clear:both;margin:0;padding:0;line-height:0;}
+.wf-trade-btn-space {margin-top:1.25em;}
+	
+@media (min-width:47.5625em) {
+	#wf-trade-mini-container {height:18.75em;}
+	#wf-trade-mini-content td {height:18.75em;vertical-align:middle;}
+	#wf-trade-img-container td {height:18.75em;vertical-align:middle;}
+}
+@media (max-width:47.5em) and (min-width:36.8751em) {
+	#wf-trade-mini-container {height:21.875em;}
+	#wf-trade-mini-content td {height:21.875em;vertical-align:middle;}
+	#wf-trade-img-container td {height:21.875em;vertical-align:middle;}
+	#wf-trade-mini-container h1 {font-size:1.9375em !important;margin-bottom:1em;}
+}
+@media (max-width:36.875em) {
+	#wf-trade-mini-container {width:90%;padding:2.5em 5%;}
+	#wf-trade-mini-container h1 {font-size:1.75em !important;margin-bottom:0.9375em;}	
+	#wf-trade-mini-container p {font-size:1em !important;}	
+	#wf-trade-mini-content {margin:0;text-align:center;float:none;width:100%;}
+	#wf-trade-img-container {margin:1.875em 0 0 0;text-align:center;float:none;width:100%;}
+	#wf-trade-img-container img {width:85%;margin-top:1em;}
+	#wf-trade-img-container table {margin:0 auto;}
+}
+
+
+/* Why Fidelity - Straightforward Pricing */
+#wf-price-mini-container {max-width:71.25em;margin:0 auto;}
+#wf-price-mini-container h1 {width:50%;}
+#wf-price-mini-container p {width:50%;}
+	
+@media (min-width:47.5625em) {
+	#wf-price-mini-container {background: #FFF url('../images/fidelity/why-straightforward-pricing_L.png') bottom left no-repeat;background-size:cover;height:18.75em;}
+	#wf-price-mini-content td {height:18.75em;vertical-align:middle;}
+}
+@media (max-width:47.5em) and (min-width:31.3125em) {
+	#wf-price-mini-container {background: #FFF url('../images/fidelity/why-straightforward-pricing_M.png') bottom left no-repeat;background-size:cover;height:23.4375em;}
+	#wf-price-mini-container h1 {font-size:1.9375em !important;margin-bottom:1.25em;}
+	#wf-price-mini-content td {height:23.4375em;vertical-align:middle;}
+}
+@media (max-width:31.25em) {
+	#wf-price-mini-container {background: #FFF url('../images/fidelity/why-straightforward-pricing_S.png') bottom left no-repeat;background-size:cover;padding-bottom:75%;}
+	#wf-price-mini-container h1 {width:100%;font-size:1.75em !important;margin-bottom:0.9375em;}	
+	#wf-price-mini-container p {width:100%;font-size:1em !important;}
+	#wf-price-mini-content {margin:0;padding:2.5em 5% 0 5%;text-align:center;}
+}
+	
+	
+	
+/* Why Fidelity - Straightforward Pricing - Trading & PAS Fee Tables */
+.wf-price-tb-master-container {background-color:#FFF;}
+#wf-price-tb-section-header {font-size:1.75em;line-height:1.25;font-weight:400;margin-bottom:0.75em;}
+.wf-price-tb-table-title {font-size:1.375em;line-height:1.3125;font-weight:bold;}
+.wf-price-tb-table-simple-hel {font-size:1.125em;line-height:1.375;margin:1.5em 0 1.5em;border-bottom:0.0625em solid #CCC;width:100%;}
+.wf-price-tb-table-simple-hel th {padding:0.5em;color:#000;border-top:0.0625em solid #CCC;border-bottom:0.0625em solid #CCC;vertical-align:bottom;}
+th.wf-price-tb-leftrule {border-left:0.0625em solid #CCC;}
+.wf-price-tb-pseudo-head {color:#666 !important;font-weight:bold;margin-top:-0.625em !important;font-size:1em !important;}
+.wf-price-tb-table-simple-hel td {padding:0.5em;color:#000;border-bottom:0.0625em solid #CCC;width:25%;}
+.wf-price-tb-table-simple-hel td p {padding:0.5em 0 0 0;}
+.wf-price-tb-table-simple-hel td, .wf-price-table-simple-hel th {border-left:none;}
+.wf-price-tb-table-simple-hel td+td, .wf-price-table-simple-hel th+th {border-left:0.0625em solid #CCC;}
+td.wf-price-tb-strong {font-weight:bold;}
+tr.wf-price-tb-first-alternate-color, tr.wf-price-first-alternate-color td {background-color:#f4f4f4;}
+tr.wf-price-tb-second-alternate-color, tr.wf-price-second-alternate-color td {background-color:#fff;}
+p.wf-price-tb-subtext {font-size:0.8em !important;font-weight:300;line-height:1.375;margin:0 0 0.05em 0;padding:0.5em 0 0 0;color:#757575 !important;vertical-align:bottom;}
+.wf-price-tb-product {font-size:1.125em;}
+.wf-price-tb-large-text {font-size:1em;margin-bottom:0.5em;line-height:1.375;}
+.wf-price-tb-table-cta {font-size:1em;font-weight:800;}
+
+@media (max-width:47.5em) and (min-width:30.0001em) {
+	.wf-price-tb-table-title {font-size:1.375em;}
+	.wf-price-tb-table-simple-hel {margin:1.125em 0 1.5em;}
+	.wf-price-tb-table-simple-hel td p {padding:0.5em 0 0 0;color:#000;font-size:1.125em;}
+}
+@media (min-width:30.0001em) {
+	#wf-price-tb-mobile-table {display:none;}
+}
+@media (max-width:30em) {
+	#wf-price-tb-section-header {font-size:1.75em;}
+	#wf-price-tb-desktop-table {display:none;}
+	#wf-price-tb-mobile-table {display:block;font-size:100%;margin-bottom:1.5em;}
+	#wf-price-tb-mobile-table h2 {font-size:1.125em;color:#666;line-height:1.25;margin:1.5625em 0 0.625em 0;}
+	.wf-price-tb-new-table {border-bottom:solid 0.0625em #CCC;}
+	.wf-price-tb-top-table {border-top:solid 0.0625em #CCC;}
+	.wf-price-tb-table-head {width:45%;float:left;padding:2.5%;}
+	.wf-price-tb-table-head h3{font-size:1.125em;font-weight:bold;margin-bottom:-0.625em;}
+	.wf-price-tb-table-head p {color:#666;font-size:1em;line-height:1.375;font-weight:400;}
+	.wf-price-tb-table-desc {width:44%;float:left;padding:2.5% 2.5% 5% 2.5%;border-left:0.065em solid #CCC;}
+	.wf-price-tb-table-desc p {font-size:1.125em;line-height:1.375;margin-bottom:0.5em;}
+	.wf-price-tb-clear {clear:both;margin:0;padding:0;line-height:0;}
+	th.wf-price-tb-leftrule {border-left:none;}
+	
+	.wf-price-tb-table-simple-hel td+td,.table-simple-hel th+th {width:65%;margin-top:0.9375em;border-left:none;border-top:0.0625em solid #CCC;}
+	.wf-price-tb-table-simple-hel td {width:65%;}
+	.wf-price-tb-master-container ::before {font-weight:bold;margin-top:0.5em;max-width:25%;}
+}
+
+
+
+/* Why Fidelity - Insights & Tools */
+#wf-tools-mini-container {max-width:71.25em;margin:0 auto;background: #FFF url('../images/fidelity/why_Tools-bg.jpg') bottom right no-repeat;background-size:cover;}
+#wf-tools-mini-content {width:55%;float:left;}
+#wf-tools-img-container {margin-right:5%;width:30%;float:right;text-align:center;display:block;}
+#wf-tools-img-container img {width:100%;}
+#wf-tools-img-container p {font-size:0.9375em;line-height:1.125em;padding-bottom:0.5em;}
+#wf-tools-img-container sup {font-size:0.5em;}
+.wf-price-clear {clear:both;margin:0;padding:0;line-height:0;}
+	
+@media (min-width:47.5625em) {
+	#wf-tools-mini-container {height:18.75em;}
+	#wf-tools-mini-content td {height:18.75em;vertical-align:middle;}
+	#wf-tools-img-container td {height:18.75em;vertical-align:middle;}
+}
+@media (max-width:47.5em) and (min-width:36.8751em) {
+	#wf-tools-mini-container {height:18.75em;}
+	#wf-tools-mini-content td {height:18.75em;vertical-align:middle;}
+	#wf-tools-img-container td {height:18.75em;vertical-align:middle;}
+	#wf-tools-mini-container h1 {font-size:1.9375em !important;margin-bottom:1.25em;}
+}
+@media (max-width:36.875em) {
+	#wf-tools-mini-container {width:90%;padding:2.5em 5%;}
+	#wf-tools-mini-container h1 {font-size:1.75em !important;margin-bottom:0.9375em;}	
+	#wf-tools-mini-container p {font-size:1em !important;}	
+	#wf-tools-mini-content {margin:0;text-align:center;float:none;width:100%;}
+	#wf-tools-img-container {margin:1.875em 0 0 0;text-align:center;float:none;width:100%;}
+	#wf-tools-img-container img {width:70%;}
+	#wf-tools-img-container table {margin:0 auto;}
+}
+
+
+
+/* Why Fidelity - Insights & Tools - Danoff Callout */
+#wf-tools-mini-container2 {max-width:71.25em;margin:-1.875em auto 0 auto;}
+#wf-tools-mini-container2 h3 {font-size:1.5em;line-height:1.25;font-weight:400;margin:0 0 1.25em 0;width:60%;}
+#wf-tools-mini-container2 p {font-size:1em;line-height:1.375;width:60%;}
+	
+@media (min-width:47.5625em) {
+	#wf-tools-mini-container2 {background: #FFF url('../images/fidelity/why-Danoff_L.jpg') bottom right no-repeat;background-size:cover;height:18.75em;}
+	#wf-tools-mini-content2 td {height:18.75em;vertical-align:middle;}
+}
+@media (max-width:47.5em) and (min-width:31.3125em) {
+	#wf-tools-mini-container2 {background: #FFF url('../images/fidelity/why-Danoff_M.jpg') bottom right no-repeat;background-size:cover;height:21.875em;}
+	#wf-tools-mini-content2 td {height:21.875em;vertical-align:middle;}
+}
+@media (max-width:36.875em) {
+	#wf-tools-mini-container2 {background: #FFF url('../images/fidelity/why-Danoff_S.jpg') bottom right no-repeat;background-size:cover;padding-bottom:75%;}
+	#wf-tools-mini-container2 h3 {width:100%;margin-bottom:0.9375em;}	
+	#wf-tools-mini-container2 p {width:100%;font-size:1em !important;}	
+	#wf-tools-mini-content2 {margin:0;padding:2.5em 5% 0 5%;text-align:center;}
+}
+
+
+
+/* Why Fidelity - Security & Privacy */
+#wf-security-mini-container {max-width:71.25em;margin:0 auto;}
+#wf-security-mini-container h1 {width:60%;}
+#wf-security-mini-container p {width:60%;}
+	
+@media (min-width:47.5625em) {
+	#wf-security-mini-container {background: #FFF url('../images/fidelity/why-Security_L.jpg') bottom right no-repeat;background-size:cover;height:18.75em;}
+	#wf-security-mini-content td {height:18.75em;vertical-align:middle;}
+}
+@media (max-width:47.5em) and (min-width:31.3125em) {
+	#wf-security-mini-container {background: #FFF url('../images/fidelity/why-Security_M.jpg') bottom right no-repeat;background-size:cover;height:21.875em;}
+	#wf-security-mini-container h1 {font-size:1.9375em !important;margin-bottom:1.25em;}
+	#wf-security-mini-content td {height:21.875em;vertical-align:middle;}
+}
+@media (max-width:31.25em) {
+	#wf-security-mini-container {background: #FFF url('../images/fidelity/why-Security_S.jpg') bottom right no-repeat;background-size:cover;padding-bottom:69%;}
+	#wf-security-mini-container h1 {width:100%;font-size:1.75em !important;margin-bottom:0.9375em;}	
+	#wf-security-mini-container p {width:100%;font-size:1em !important;}	
+	#wf-security-mini-content {margin:0;padding:2.5em 5% 0 5%;text-align:center;}
+}

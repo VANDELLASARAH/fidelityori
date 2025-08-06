@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* INDENT FIX FOR BASIC TEXT ELEMENTS IN TABLE CELLS */
+
+/* TABLE-SIMPLE */
+
+#responsive-main .table-simple td ul, #responsive-main-right .table-simple td ul, #responsive-toc-main .table-simple td ul, #responsive-toc-right .table-simple td ul, #responsive-main .table-simple td ol, #responsive-main-right .table-simple td ol, #responsive-toc-main .table-simple td ol, #responsive-toc-right .table-simple td ol { margin-left: 0 !important; }
+#responsive-main .table-simple td p, #responsive-main-right .table-simple td p, #responsive-toc-main .table-simple td p, #responsive-toc-right .table-simple td p { padding-right: 0 !important; padding-left: 0 !important; }
+
+/* TABLE-DENSE */
+
+#responsive-main .table-dense td ul, #responsive-main-right .table-dense td ul, #responsive-toc-main .table-dense td ul, #responsive-toc-right .table-dense td ul, #responsive-main .table-dense td ol, #responsive-main-right .table-dense td ol, #responsive-toc-main .table-dense td ol, #responsive-toc-right .table-dense td ol { margin-left: 0 !important; }
+#responsive-main .table-dense td p, #responsive-main-right .table-dense td p, #responsive-toc-main .table-dense td p, #responsive-toc-right .table-dense td p { padding-right: 0 !important; padding-left: 0 !important; }
