@@ -1,0 +1,7 @@
+.branches--qualtrics-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.branches--qualtrics-wrapper h1 {
+    flex-grow: 1;
+}

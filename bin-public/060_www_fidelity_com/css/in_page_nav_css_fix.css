@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.horizontal-navigation-component.inpage {
+    font-family: "Fidelity Sans";
+    margin: 0 0 .5em;
+    padding: 0 5% !important;
+    text-align: center;
+}
+.horizontal-navigation-component--list.inpage {
+    margin: 0;
+    display: inline-block;
+}
+.horizontal-navigation-component--list.inpage > li {
+    padding-top: 1.125em; padding-bottom: 1.125em;
+    font-family: "Fidelity Sans", Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: 1.125em;
+    float: none;
+    line-height: 1.25;
+    text-transform: none;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 0;
+}
+.horizontal-navigation-component--list.inpage > li a {
+    font-weight: 400;
+}
+.horizontal-navigation-component--list.inpage > li + li {
+    padding-left: 2.1875em;
+    padding-top: 1.125em;
+    padding-bottom: 1.125em;
+}
+@media (max-width:49.625em) {
+	#responsive-main .horizontal-navigation-component.inpage, 
+	#responsive-main-right .horizontal-navigation-component.inpage, 
+	#responsive-toc-main .horizontal-navigation-component, 
+	#responsive-toc-right .horizontal-navigation-component.inpage {
+		padding: 1.125em 5%;
+	}
+}
