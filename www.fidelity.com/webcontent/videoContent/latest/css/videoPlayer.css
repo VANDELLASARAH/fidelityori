@@ -1,0 +1,2565 @@
+.video-responsive-single #embedDiv {
+	height: 15px; 
+}
+.responsive-vertical-hub #embedDiv, 
+	.responsive-horizontal-hub #embedDiv" {
+	height: 19px;
+}
+/*Added to hide the helloDiv needed to make the horizontal hub but gave a not ideal experience for accessibility*/
+#helloDiv{
+  display:none;
+}
+.tpPlayer div { top:0px;}
+.release-info {
+  border: none;
+  border-left: 1px solid #DBDBDB;
+  border-top: 1px solid #DBDBDB;
+  margin: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.tpBackground { display: none; }
+
+.tpReleaseSelected {
+  background-color: #FFFFFF;
+}
+
+.tpRelease > a:hover {
+  background-color: #FFFFFe;
+}
+
+.tpRelease > a:active, .tpRelease > a:focus {
+    text-decoration:none;
+}
+
+.tpTitle {
+  text-align: left;
+  color: #0F57C2;
+  font-size: 13px !important;
+  font-weight: normal;
+  font-family: "Cambria", Georgia, serif !important;
+  padding: 0px 0px 6px 0px !important;
+}
+
+#releaseListDiv  h2.tpTitle{
+  width:100%!important;	
+}
+
+.tpTitle .tpDuration {
+  color: #666666;
+}
+
+.tpReleaseSelected .tpTitle {
+  color: #000000;
+  font-weight: bold;
+}
+
+#clipInfoDiv a{
+  text-decoration:none;
+}
+
+/* === Begin Large Video === */
+.videolarge {text-align:center;background-color:#EEEEEE;margin: 0px 0px 20px 0px;width: 727px;}
+.videolarge #embedDiv {width: 704px; height: 415px; margin:0px 11px 0px 12px;}
+.videolarge .clipInfo {height: auto;margin: 0px 0px 0px 0px;padding: 4px 16px 21px 16px;text-align: left;width: auto;}
+.videolarge .clipInfoTitle {font-family:"Cambria",Georgia,serif; font-size:120%; font-style:italic; font-weight:bold;margin: 0;padding:0px 8px 0px 0px;text-transform:none;}
+.videolarge .clipdescription {font-style:italic;padding:0 8px 13px 0px;font-family:"Cambria",Georgia,serif;font-size:100%;font-weight:normal;line-height:140%;text-transform:none;}
+.videolarge .clipdescription p {font-size:100%;}
+.videolarge .fancyexpand {background-image:url("../images/expand_blue_11_11.gif");background-repeat:no-repeat;background-position:0 1px;display:block;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:bold;padding-bottom:0;padding-left:18px;text-transform:none;}
+.videolarge .fancyexpand a {color:#0F57C2;cursor:pointer;}	
+.videolarge .fancycollapse {background-image:url("../images/collapse_blue_11_11.gif");background-repeat:no-repeat;background-position:0 1px;display:block;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:bold;padding-bottom:0;padding-left:18px;text-transform:none;}
+.videolarge .fancycollapse a {color:#0F57C2;cursor:pointer;}	
+.videolarge .expandContent {display:none;padding-left:18px;color:#666666;font-family: "Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:8px;text-transform:none;}
+.videolarge .expandContent p {font-size:100%;line-height:125%;}
+.videolarge .legalinfo{display:none;padding:0px 0px 6px 0px;}
+.videolarge .legal{color:#666666;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:5px;text-transform:none;padding:0px;}
+/* .videolarge .player { margin:0px 0px 8px 1px;}*/
+.videolarge a.overlayPlayButton {width: 100px;height: 100px;font-size: 72px;text-decoration: none; color: white;background: url('../images/playOverlay.png');}
+.videolarge .loadingIndicator {width: 98px;	height: 20px;	margin-left: -50px; margin-top: -10px;border: 1px solid white;color: white;font-size: 77%;	line-height: 18px;	background: black;	font-family: Helvetica, Arial, sans-serif;	text-align: center;}
+.videolarge .cardOvelay{text-align:center; float:left;}
+/* This is because safari/quicktime on windows sticks in next/back buttons */
+audio::-webkit-media-controls-seek-back-button, video::-webkit-media-controls-seek-back-button {-webkit-appearance: media-seek-back-button; position: absolute;top: 0;right: 16px; width: 17px; height: 16px; display:none; }
+audio::-webkit-media-controls-seek-forward-button, video::-webkit-media-controls-seek-forward-button {-webkit-appearance: media-seek-forward-button;position: absolute;top: 0;right: 0;width: 17px;height: 16px;display:none;}
+
+/* === Begin Medium Video === */
+.videomedium {text-align:center;background-color:#EEEEEE;margin: 0px 8px 20px 0px;width:541px; clear:both;}
+.videomedium #embedDiv {width: 512px; height: 307px; margin:0px 15px 0px 15px;}
+.videomedium .clipInfo {height: auto;margin: 0px 0px 0px 0px;padding: 4px 16px 21px 16px;text-align: left;width: auto;display:none;}
+.videomedium .clipInfoTitle {font-family:"Cambria",Georgia,serif; font-size:120%; font-style:italic; font-weight:bold;margin: 0;padding:0px 8px 0px 0px;text-transform:none;}
+.videomedium .clipdescription {font-style:italic;padding:0 8px 13px 0px;font-family:"Cambria",Georgia,serif;font-size:100%;font-weight:normal;line-height:140%;text-transform:none;}
+.videomedium .clipdescription p {font-size:100%;}
+.videomedium .fancyexpand {background-image:url("../images/expand_blue_11_11.gif");background-repeat:no-repeat;background-position:0 1px;display:block;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:bold;padding-bottom:0;padding-left:18px;text-transform:none;}
+.videomedium .fancyexpand a {color:#0F57C2;cursor:pointer;}	
+.videomedium .fancycollapse {background-image:url("../images/collapse_blue_11_11.gif");background-repeat:no-repeat;background-position:0 1px;display:block;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:bold;padding-bottom:0;padding-left:18px;text-transform:none;}
+.videomedium .fancycollapse a {color:#0F57C2;cursor:pointer;}	
+.videomedium .expandContent {display:none;padding-left:18px;color:#666666;font-family: "Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:8px;text-transform:none;}
+.videomedium .expandContent p {font-size:100%;line-height:125%; padding-left:0px;}
+.videomedium .legalinfo{display:none;padding:0px 0px 6px 0px;}
+.videomedium .legal{color:#666666;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:5px;text-transform:none;padding:0px;}
+.videomedium a.overlayPlayButton {width: 100px;height: 100px;font-size: 72px;text-decoration: none; color: white;background: url('../images/playOverlay.png');}
+.videomedium .loadingIndicator {width: 98px;height: 20px;margin-left: -50px; margin-top: -10px;border: 1px solid white;color: white;font-size: 77%;	line-height: 18px;	background: black;	font-family: helvetica;	text-align: center;}
+.videomedium .cardOvelay{text-align:center; float:left;}
+
+/* === Begin Small Video === */
+.videosmall {text-align:center;background-color:#EEEEEE;margin: 0px 8px 20px 16px;width: 347px;float:right;clear:both;}
+.videosmall #embedDiv {width: 320px; height: 199px; margin:0px 13px 0px 13px;}
+.videosmall .clipInfo {height: auto;margin: 0px 0px 0px 0px;padding: 4px 16px 21px 16px;text-align: left;width: auto; display:none;}
+.videosmall .clipInfoTitle {font-family:"Cambria",Georgia,serif; font-size:120%; font-style:italic; font-weight:bold;margin: 0;padding:0px 8px 0px 0px;text-transform:none;}
+.videosmall .clipdescription {font-style:italic;padding:0 8px 13px 0px;font-family:"Cambria",Georgia,serif;font-size:100%;font-weight:normal;line-height:140%;text-transform:none;}
+.videosmall .clipdescription p {font-size:100%;}
+.videosmall .fancyexpand {background-image:url("../images/expand_blue_11_11.gif");background-repeat:no-repeat;background-position:0 1px;display:block;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:bold;padding-bottom:0;padding-left:18px;text-transform:none;}
+.videosmall .fancyexpand a {color:#0F57C2;cursor:pointer;}	
+.videosmall .fancycollapse {background-image:url("../images/collapse_blue_11_11.gif");background-repeat:no-repeat;background-position:0 1px;display:block;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:bold;padding-bottom:0;padding-left:18px;text-transform:none;}
+.videosmall .fancycollapse a {color:#0F57C2;cursor:pointer;}	
+.videosmall .expandContent {display:none;padding-left:18px;color:#666666;font-family: "Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:8px;text-transform:none;}
+.videosmall .expandContent p {font-size:100%;line-height:125%;}
+.videosmall .legalinfo{display:none;padding:0px 0px 6px 0px;}
+.videosmall .legal{color:#666666;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:5px;text-transform:none;padding:0px;}
+/*.videosmall .player { margin:0px 0px 8px 1px;}*/
+.videosmall a.overlayPlayButton {width: 100px;height: 100px;font-size: 72px;text-decoration: none; color: white;background: url('../images/playOverlay.png');}
+.videosmall .loadingIndicator {width: 98px;	height: 20px;	margin-left: -50px; margin-top: -10px;border: 1px solid white;color: white;font-size: 77%;	line-height: 18px;	background: black;	font-family: Helvetica, Arial, sans-serif;	text-align: center;}
+.videosmall .cardOvelay{text-align:center; float:left;}
+
+/* === Begin XSmall Video === */
+.videoxsmall {text-align:center;background-color:#EEEEEE;margin: 0px 0px 20px 0px;width: 223px;}
+.videoxsmall #embedDiv {width: 192px; height: 135px; margin:0px 15px 0px 15px;}
+.videoxsmall .clipInfo {height: auto;margin: 0px 0px 0px 0px;padding: 4px 16px 21px 16px;text-align: left;width: auto; display:none;}
+.videoxsmall .clipInfoTitle {font-family:"Cambria",Georgia,serif; font-size:120%; font-style:italic; font-weight:bold;margin: 0;padding:0px 8px 0px 0px;text-transform:none;}
+.videoxsmall .clipdescription {font-style:italic;padding:0 8px 13px 0px;font-family:"Cambria",Georgia,serif;font-size:100%;font-weight:normal;line-height:140%;text-transform:none;}
+.videoxsmall .clipdescription p {font-size:100%;}
+.videoxsmall .fancyexpand {background-image:url("../images/expand_blue_11_11.gif");background-repeat:no-repeat;background-position:0 1px;display:block;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:bold;padding-bottom:0;padding-left:18px;text-transform:none;}
+.videoxsmall .fancyexpand a {color:#0F57C2;cursor:pointer;}	
+.videoxsmall .fancycollapse {background-image:url("../images/collapse_blue_11_11.gif");background-repeat:no-repeat;background-position:0 1px;display:block;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:bold;padding-bottom:0;padding-left:18px;text-transform:none;}
+.videoxsmall .fancycollapse a {color:#0F57C2;cursor:pointer;}	
+.videoxsmall .expandContent {display:none;padding-left:18px;color:#666666;font-family: "Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:8px;text-transform:none;}
+.videoxsmall .expandContent p {font-size:100%;line-height:125%;}
+.videoxsmall .legalinfo{display:none;padding:0px 0px 6px 0px;}
+.videoxsmall .legal{color:#666666;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:5px;text-transform:none;padding:0px;}
+/*.videoxsmall .player { margin:0px 0px 8px 1px;}*/
+.videoxsmall a.overlayPlayButton {width: 100px;height: 100px;font-size: 72px;text-decoration: none; color: white;background: url('../images/playOverlay.png');}
+.videoxsmall .loadingIndicator {width: 98px;	height: 20px;	margin-left: -50px; margin-top: -10px;border: 1px solid white;color: white;font-size: 77%;	line-height: 18px;	background: black;	font-family: Helvetica, Arial, sans-serif;	text-align: center;}
+.videoxsmall .cardOvelay{text-align:center; float:left;}
+
+.video_XsmallMain {text-align:center;background-color:#EEEEEE;margin: 0px 0px 20px 0px;width: 223px;}
+.video_XsmallMain #embedDiv {width: 192px; height: 135px; margin:0px 15px 0px 15px;}
+.video_XsmallMain .clipInfo {height: auto;margin: 0px 0px 0px 0px;padding: 4px 16px 21px 16px;text-align: left;width: auto; display:none;}
+.video_XsmallMain .clipInfoTitle {font-family:"Cambria",Georgia,serif; font-size:120%; font-style:italic; font-weight:bold;margin: 0;padding:0px 8px 0px 0px;text-transform:none;}
+.video_XsmallMain .clipdescription {font-style:italic;padding:0 8px 13px 0px;font-family:"Cambria",Georgia,serif;font-size:100%;font-weight:normal;line-height:140%;text-transform:none;}
+.video_XsmallMain .clipdescription p {font-size:100%;}
+.video_XsmallMain .fancyexpand {background-image:url("../images/expand_blue_11_11.gif");background-repeat:no-repeat;background-position:0 1px;display:block;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:bold;padding-bottom:0;padding-left:18px;text-transform:none;}
+.video_XsmallMain .fancyexpand a {color:#0F57C2;cursor:pointer;}	
+.video_XsmallMain .fancycollapse {background-image:url("../images/collapse_blue_11_11.gif");background-repeat:no-repeat;background-position:0 1px;display:block;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:bold;padding-bottom:0;padding-left:18px;text-transform:none;}
+.video_XsmallMain .fancycollapse a {color:#0F57C2;cursor:pointer;}	
+.video_XsmallMain .expandContent {display:none;padding-left:18px;color:#666666;font-family: "Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:8px;text-transform:none;}
+.video_XsmallMain .expandContent p {font-size:100%;line-height:125%;}
+.video_XsmallMain .legalinfo{display:none;padding:0px 0px 6px 0px;}
+.video_XsmallMain .legal{color:#666666;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:5px;text-transform:none;padding:0px;}
+.video_XsmallMain .player { margin:0px 0px 8px 1px;}
+.video_XsmallMain a.overlayPlayButton {width: 100px;height: 100px;font-size: 72px;text-decoration: none; color: white;background: url('../images/playOverlay.png');}
+.video_XsmallMain .loadingIndicator {width: 98px;	height: 20px;	margin-left: -50px; margin-top: -10px;border: 1px solid white;color: white;font-size: 77%;	line-height: 18px;	background: black;	font-family: Helvetica, Arial, sans-serif;	text-align: center;}
+.video_XsmallMain .cardOvelay{text-align:center; float:left;}
+
+/* === Begin Large Horizontal Hub Player === */
+.large-videohub { margin: 0px 0px 20px 0px;width: 727px; background-color:#EEEEEE;}
+.large-videohub .player-info {background-color:#EEEEEE;}
+.large-videohub .clipInfo {height: auto;margin: 0px 0px 0px 0px;padding: 4px 16px 18px 16px;text-align: left; width: auto; display: block; }
+.large-videohub .clipInfoTitle {font-family:"Cambria",Georgia,serif; font-size:120%; font-style:italic; font-weight:bold;margin: 0;padding:0px 8px 0px 0px;text-transform:none;}
+.large-videohub .clipdescription {font-style:italic;padding:0 8px 13px 0px;font-family:"Cambria",Georgia,serif;font-size:100%;font-weight:normal;line-height:140%;text-transform:none;}
+.large-videohub .clipdescription p {font-size:100%;}
+.large-videohub .fancyexpand {background-image:url("../images/expand_blue_11_11.gif");background-repeat:no-repeat;background-position:0 1px;display:block;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:bold;padding-bottom:0;padding-left:18px;text-transform:none; zoom:1;}
+.large-videohub .fancyexpand a {color:#0F57C2;cursor:pointer;}	
+.large-videohub .fancycollapse {background-image:url("../images/collapse_blue_11_11.gif");background-repeat:no-repeat;background-position:0 1px;display:block;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:bold;padding-bottom:0;padding-left:18px;text-transform:none; zoom:1;}
+.large-videohub .fancycollapse a {color:#0F57C2;cursor:pointer;}	
+.large-videohub .expandContent {display:none;padding-left:18px;color:#666666;font-family: "Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:8px;text-transform:none;}
+.large-videohub .expandContent p {font-size:100%;line-height:125%;}
+.large-videohub .legalinfo{display:block;padding:0px 0px 6px 0px;}
+.large-videohub .legal{color:#666666;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:9px;text-transform:none;padding:0px;}
+.large-videohub .clear-both {clear:both;}
+/*.large-videohub .player { margin:0px 0px 8px 1px;}*/
+.large-videohub a.overlayPlayButton {width: 100px;height: 100px;font-size: 72px;text-decoration: none; color: white;background: url('../images/playOverlay.png');}
+.large-videohub .loadingIndicator {width: 98px;	height: 20px;	margin-left: -50px; margin-top: -10px;border: 1px solid white;color: white;font-size: 77%;	line-height: 18px;	background: black;	font-family: Helvetica, Arial, sans-serif;	text-align: center;}
+.large-videohub .cardOvelay{text-align:center; float:left;}
+.large-videohub .player-info #embedDiv {width:704px;height:415px; margin-left:11px;}
+
+.large-videohub .release-info {
+  width: 727px;
+  height: 173px;
+}
+
+.large-videohub .tpReleaseList {
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.large-videohub .tpReleaseList .releaseListThumb{
+  float: none;
+}
+.large-videohub .tpReleaseList > .tpGrid {
+  display: table; 
+  overflow-x: auto !important;
+  /*width: 250% !important;*/
+  margin: 0px 0px 0px 0px !important;
+  /*
+  position: static !important;
+  */
+  white-space: nowrap;
+}
+
+.large-videohub .tpRelease {
+  position: static !important;
+  height: 158px !important;
+  width: 140px !important;
+  border-bottom: 1px dotted #cccccc;
+  border-right: 1px dotted #cccccc;
+  display: inline-block;
+  *display: inline;
+  background-image: none !important;
+  padding-left: 0px !important;
+  float: none !important;
+}
+
+.large-videohub .tpRelease a {
+  position: static !important;
+  display: inline-block !important;
+  width: auto !important;
+  height: 100% !important;
+}
+
+.large-videohub .tpGrid .tpInfo { 
+  width: 128px !important;
+  height: 100%;
+  padding: 5px;
+}
+
+.large-videohub .tpThumbnail {
+  float: none !important;
+  width: 80px !important;
+  height: 45px !important;
+}
+
+.large-videohub .tpMetadata {
+  height: 100% !important;
+  width: 120px !important;
+  margin: 5px !important;
+  white-space: normal;
+}
+
+/* === Begin Medium Horizontal Hub Player === */
+.medium-videohub { margin: 0px 0px 20px 0px;width: 540px; background-color:#EEEEEE;}
+.medium-videohub .player-info {background-color:#EEEEEE;}
+.medium-videohub .clipInfo {height: auto;margin: 0px 0px 0px 0px;padding: 4px 16px 18px 16px;text-align: left; width: auto; display: block; }
+.medium-videohub .clipInfoTitle {font-family:"Cambria",Georgia,serif; font-size:120%; font-style:italic; font-weight:bold;margin: 0;padding:0px 8px 0px 0px;text-transform:none;}
+.medium-videohub .clipdescription {font-style:italic;padding:0 8px 13px 0px;font-family:"Cambria",Georgia,serif;font-size:100%;font-weight:normal;line-height:140%;text-transform:none;}
+.medium-videohub .clipdescription p {font-size:100%;}
+.medium-videohub .fancyexpand {background-image:url("../images/expand_blue_11_11.gif");background-repeat:no-repeat;background-position:0 1px;display:block;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:bold;padding-bottom:0;padding-left:18px;text-transform:none; zoom:1;}
+.medium-videohub .fancyexpand a {color:#0F57C2;cursor:pointer;}	
+.medium-videohub .fancycollapse {background-image:url("../images/collapse_blue_11_11.gif");background-repeat:no-repeat;background-position:0 1px;display:block;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:bold;padding-bottom:0;padding-left:18px;text-transform:none; zoom:1;}
+.medium-videohub .fancycollapse a {color:#0F57C2;cursor:pointer;}	
+.medium-videohub .expandContent {display:none;padding-left:18px;color:#666666;font-family: "Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:8px;text-transform:none;}
+.medium-videohub .expandContent p {font-size:100%;line-height:125%;}
+.medium-videohub .legalinfo{display:block;padding:0px 0px 6px 0px;}
+.medium-videohub .legal{color:#666666;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:9px;text-transform:none;padding:0px;}
+.medium-videohub .clear-both {clear:both;}
+/*.medium-videohub .player { margin:0px 0px 8px 1px;}*/
+.medium-videohub a.overlayPlayButton {width: 100px;height: 100px;font-size: 72px;text-decoration: none; color: white;background: url('../images/playOverlay.png');}
+.medium-videohub .loadingIndicator {width: 98px;	height: 20px;	margin-left: -50px; margin-top: -10px;border: 1px solid white;color: white;font-size: 77%;	line-height: 18px;	background: black;	font-family: Helvetica, Arial, sans-serif;	text-align: center;}
+.medium-videohub .cardOvelay{text-align:center; float:left;}
+.medium-videohub .player-info #embedDiv {width:512px;height:307px;margin-left:14px;}
+
+.medium-videohub .release-info {
+  width: 540px;
+  height: 159px;
+}
+
+.medium-videohub .tpReleaseList {
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.medium-videohub .tpReleaseList .releaseListThumb{
+  float: none;
+}
+.medium-videohub .tpReleaseList > .tpGrid {
+  display: table;
+  overflow-x: auto !important;
+  /*width: 250% !important;*/
+  white-space: nowrap; 
+  margin: 0px 0px 0px 0px !important;
+  /*
+  position: static !important;
+  */
+}
+
+.medium-videohub .tpRelease {
+  position: static !important;
+  height: 158px !important;
+  width: 140px !important;
+  border-bottom: 1px dotted #cccccc;
+  border-right: 1px dotted #cccccc;
+  display: inline-block;
+  *display: inline;
+  background-image: none !important;
+  padding-left: 0px !important;
+  float: none !important;
+}
+
+.medium-videohub .tpRelease a {
+  position: static !important;
+  display: inline-block !important;
+  width: auto !important;
+  height: 100% !important;
+}
+
+.medium-videohub .tpGrid .tpInfo { 
+  width: 128px !important;
+  height: 100%;
+  padding: 5px;
+}
+
+.medium-videohub .tpThumbnail {
+  float: none !important;
+  width: 80px !important;
+  height: 45px !important;
+}
+
+.medium-videohub .tpMetadata {
+  height: 100% !important;
+  width: 120px !important;
+  margin: 5px !important;
+  white-space: normal;
+}
+
+/* === Begin Medium Vertical Hub Player === */
+.videohub {text-align:center;margin: 0px 0px 20px 0px;width: 727px; background-color:#EEEEEE;}
+.videohub .player-info {width:512px;background-color:#EEEEEE;float:left;margin:0px;padding:0px;}
+.videohub .clipInfo {height: auto;margin: 0px 0px 0px 0px;padding: 4px 16px 21px 16px;text-align: left;width: auto;}
+.videohub .clipInfoTitle {font-family:"Cambria",Georgia,serif; font-size:120%; font-style:italic; font-weight:bold;margin: 0;padding:0px 8px 0px 0px;text-transform:none;}
+.videohub .clipdescription {font-style:italic;padding:0 8px 13px 0px;font-family:"Cambria",Georgia,serif;font-size:100%;font-weight:normal;line-height:140%;text-transform:none;}
+.videohub .clipdescription p {font-size:100%;}
+.videohub .fancyexpand {background-image:url("../images/expand_blue_11_11.gif");background-repeat:no-repeat;background-position:0 1px;display:block;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:bold;padding-bottom:0;padding-left:18px;text-transform:none;}
+.videohub .fancyexpand a {color:#0F57C2;cursor:pointer;}	
+.videohub .fancycollapse {background-image:url("../images/collapse_blue_11_11.gif");background-repeat:no-repeat;background-position:0 1px;display:block;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:bold;padding-bottom:0;padding-left:18px;text-transform:none;}
+.videohub .fancycollapse a {color:#0F57C2;cursor:pointer;}	
+.videohub .expandContent {display:none;padding-left:18px;color:#666666;font-family: "Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:8px;text-transform:none;}
+.videohub .expandContent p {font-size:100%;line-height:125%;}
+.videohub .legalinfo{display:none;padding:0px 0px 6px 0px;}
+.videohub .legal{color:#666666;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:5px;text-transform:none;padding:0px;}
+.videohub .clear-both {clear:both;}
+
+.videohub a.overlayPlayButton {width: 100px;height: 100px;font-size: 72px;text-decoration: none; color: white;background: url('../images/playOverlay.png');}
+.videohub .loadingIndicator {width: 98px;	height: 20px;	margin-left: -50px; margin-top: -10px;border: 1px solid white;color: white;font-size: 77%;	line-height: 18px;	background: black;	font-family: Helvetica, Arial, sans-serif;	text-align: center;}
+.videohub .cardOvelay{text-align:center; float:left;}
+
+.videohub .player-info #embedDiv {width: 512px;	height: 307px;}
+
+.videohub .release-info {
+  height: 448px;
+  width: 213px;
+  float: left;
+}
+
+.videohub .tpReleaseList { width:100%; height:100%; }
+
+.videohub .tpReleaseList .releaseListThumb{
+  float: none;
+}
+.videohub .tpReleaseList > .tpGrid {
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0px 0px 0px 0px !important;
+}
+
+.videohub .tpRelease {
+  display: block;
+  width: 215px !important;
+  border-bottom: 1px dotted #cccccc;
+  background-image: none !important;
+  padding-left: 0px !important;
+  float: left;
+  height: auto !important;
+}
+
+.videohub .tpGrid .tpInfo { 
+  width: 100%; 
+  height: auto !important;
+  padding: 0px;
+  display: block;
+}
+
+.videohub .tpRelease > a {
+  height: auto !important;
+  position: relative;
+}
+
+
+.videohub .tpThumbnail {
+  float: left;
+  width: 54px !important;
+  height: 30px !important;
+}
+
+.videohub .tpMetadata {
+  display: block;
+  height: auto !important;
+  width: 120px !important;
+  overflow: auto !important;
+  position: relative;
+}
+.videohub .tpGroup {
+  position: relative !important;
+}
+.videohub .tpReleaseList .tpRelease .tpInfo .tpMetadata {
+  float: none !important;
+  margin-left: 0;
+}
+/** BEGIN OF BUG FIX: in IE9, medium vertical hub player releaes list do not show video title */
+.videohub .tpMetadata{top:auto!important; right:auto!important; bottom:auto!important; position:static \0/IE9 !important;}
+.videohub .tpGroup{top:auto!important; right:auto!important; bottom:auto!important; left:auto!important; *left:0px!important;} 
+/** END OF BUG FIX: in IE9, medium vertical hub player releaes list do not show video titles*/
+.videohub .tpRow .tpGroup { left:40px!important; }
+/* === END Medium Vertical Hub Player === */
+
+/**BEGIN OF BUG FIX: when the cursor move over the release list, in IE7, the cursor does not become a hand*/
+.ie7 .tpRelease a{cursor:pointer}
+/**END OF BUG FIX: when the cursor move over the release list, in IE7, the cursor does not become a hand*/
+
+/**BEGIN OF BUG FIX: The relese list title font issue with video player in IE7, font does not look as sharp*/
+.tpGradient {
+    filter: none;
+}
+/**END OF BUG FIX: The relese list title font issue with video player in IE7, font does not look as sharp*/
+/* fix for play button starting offset */
+.videohub #embedDiv canvas, .videolarge #embedDiv canvas, .videomedium #embedDiv canvas, .videosmall #embedDiv canvas, .medium-videohub #embedDiv canvas, .large-videohub #embedDiv canvas {
+    display:block;
+}
+
+
+/** Begin responsive video **/
+
+/** The first three classes here are for the responsive resizing of the player.
+    The rest are for formatting the elements, text, and legal dislaimer portions.
+ */
+
+.video-responsive-single {
+    max-width:704px;
+    background-color:#EEE;
+    padding:0px 10px 0px 10px;
+	min-width:288px;	
+	margin:0 auto 0 auto;	
+}
+.video-responsive-single video{
+	background-color:#EEE!important;
+}
+.video-responsive-single .player #embedDiv {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    max-height: 415px; /* TODO Add in reasoning/calculation */
+    margin: 0px;
+}
+.video-responsive-single .tpPlayer{
+	border-left:1px solid #EEE;
+}
+.video-responsive-single .tpPlayer .player{
+	margin-top:-3px;
+}
+/* Commented this below class .this is to resolve full screen issue in chrome
+.video-responsive-single .player {
+    position: relative!important;
+    padding-bottom: 56.25%; /* 9 divided by 16 
+    height: 0;
+    max-width: 100%;
+} */
+
+
+.video-responsive-single .clipInfo {
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    padding: 4px 16px 21px 16px;
+    text-align: left;
+    width: auto;
+}
+
+.video-responsive-single .clipInfoTitle {
+    font-family:"Cambria",Georgia,serif;
+    font-size:120%;
+    font-style:italic;
+    font-weight:bold;
+    margin: 0;
+    padding:0px 8px 0px 0px;
+    text-transform:none;
+}
+
+.video-responsive-single .clipdescription {
+    font-style:italic;
+    padding:0 8px 13px 0px;
+    font-family:"Cambria",Georgia,serif;
+    font-size:100%;
+    font-weight:normal;
+    line-height:140%;
+    text-transform:none;
+}
+
+.video-responsive-single .clipdescription p {
+    font-size:100%;
+}
+
+.video-responsive-single .fancyexpand {
+    background-image:url("../images/expand_blue_11_11.gif");
+    background-repeat:no-repeat;
+    background-position:0 1px;
+    display:block;
+    font-family:"Cambria",Georgia,serif;
+    font-size:80%;
+    font-style:normal;
+    font-weight:bold;
+    padding-bottom:0;
+    padding-left:18px;
+    text-transform:none;
+}
+
+
+.video-responsive-single .fancyexpand a {
+    color:#0F57C2;
+    cursor:pointer;
+}
+
+.video-responsive-single .fancycollapse {
+    background-image:url("../images/collapse_blue_11_11.gif");
+    background-repeat:no-repeat;
+    background-position:0 1px;
+    display:block;
+    font-family:"Cambria",Georgia,serif;
+    font-size:80%;
+    font-style:normal;
+    font-weight:bold;
+    padding-bottom:0;
+    padding-left:18px;
+    text-transform:none;
+}
+
+.video-responsive-single .fancycollapse a {
+    color:#0F57C2;
+    cursor:pointer;
+}
+
+.video-responsive-single .expandContent {
+    display:none;
+    padding-left:18px;
+    color:#666666;
+    font-family: "Cambria",Georgia,serif;
+    font-size:80%;
+    font-style:normal;
+    font-weight:normal;
+    line-height:125%;
+    margin-bottom:8px;
+    text-transform:none;
+}
+
+.video-responsive-single .expandContent p {
+    font-size:100%;
+    line-height:125%;
+}
+
+.video-responsive-single .legalinfo{
+    display:none;
+    padding:0px 0px 6px 0px;
+}
+
+.video-responsive-single .legal {
+    color:#666666;
+    font-family:"Cambria",Georgia,serif;
+    font-size:80%;
+    font-style:normal;
+    font-weight:normal;
+    line-height:125%;
+    margin-bottom:5px;
+    text-transform:none;
+    padding:0px;
+}
+
+.video-responsive-single a.overlayPlayButton {
+    width: 100px;
+    height: 100px;
+    font-size: 72px;
+    text-decoration: none;
+    color: white;
+    background: url('../images/playOverlay.png');
+}
+
+.video-responsive-single .loadingIndicator {
+    width: 98px;
+    height: 20px;
+    margin-left: -50px;
+    margin-top: -10px;
+    border: 1px solid white;
+    color: white;
+    font-size: 77%;
+    line-height: 18px;
+    background: black;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+.video-responsive-single .cardOvelay{
+    text-align:center;
+    float:left;
+}
+.video-responsive-single #embedDiv{
+	margin: auto;   
+	position: absolute;   
+	top:0;
+	bottom:0; 
+	left:0; 
+	right:0;
+	padding-bottom: 56.25%;
+}
+/* .video-responsive-single .tpPlayer {
+overflow : inherit!important;
+}
+.video-responsive-single #embedDiv0{
+	height:19px;
+} */
+/* Commented this below class and added again below it. this is to resolve full screen issue
+.video-responsive-single .tpPlayer .player {
+position : relative !important;
+height:0px;
+} */
+
+/* .video-responsive-single .tpPlayer .player {
+position : inherit;
+} */
+.promo-group-video .video-responsive-single{
+    background-color: transparent;
+    padding:0;
+}
+.promo-group-video .video-responsive-single .clipInfo {
+	padding: 4px 8px 12px 0 !important;
+}
+.promo-group-video .video-responsive-single .legal {
+	padding: 0 0 9px !important;
+}
+.promo-group-video .video-responsive-single .clipInfoTitle {
+	font-size: 100% !important;
+	line-height: 140% !important;
+	padding: 0 0 3px !important;
+}
+
+.promo-group-video .video-responsive-single .tpPlayer {
+	overflow : inherit!important;
+}
+@media(max-width:320px)
+{
+	.video-responsive-single
+	{
+		width:288px;
+		padding:0px;
+	}
+}
+
+/* CSS for related presentation (Half Width and Small width video) */
+.small-video-right-side{
+	float:right;
+	width:304px;
+	clear:both;
+    margin-left:10px;
+}
+.half-width-single-video{
+	float:right;
+	width:50%;
+	clear:both;
+    margin-left:16px;
+	min-width:308px;
+}
+
+@media (max-width:607px) and (min-width:504px){
+	.half-width-single-video{
+		width:304px
+	}
+}
+@media (max-width:503px){
+	.half-width-single-video{
+		width:100%!important;
+        margin-left:0px;
+	}
+}
+@media (max-width:503px){
+	.small-video-right-side{
+		width:100%!important;
+        margin-left:0px;
+	}
+}
+/* End of related video presentation */
+
+
+/***** Start of Responsive Vertical Hub Player *****/
+.responsive-vertical-hub {
+	text-align:center; 
+	margin:0px auto 20px auto; 
+	max-width: 919px; 
+	background-color:#EEEEEE; 
+	width:100%;
+	min-width:288px;
+
+	
+}
+.responsive-vertical-hub:after { 
+  display: block;
+  content: '';
+}
+
+.responsive-vertical-hub .player-info {	
+	background-color:#EEEEEE; 
+	margin:0px; 
+	padding:0px; 	 
+	vertical-align:top;
+	width:100%;
+	float:left;
+	margin-right:-215px;
+	padding-right:215px;
+	overflow-x:hidden;
+	box-sizing:border-box;
+	
+}
+.responsive-vertical-hub .release-info {	
+	width: 214px;
+	box-sizing:border-box;
+	float:left;
+}
+
+.responsive-vertical-hub .PlayerLabelFont{
+	float:right;
+}
+
+/* added on 05/11/2015 */
+/* Commented this below class and added again below it. this is to resolve full screen issue in chrome */
+ /* .responsive-vertical-hub .tpPlayer .player{
+	position:relative;
+	height:0px;
+	padding-bottom:56.25%;
+}  */
+
+/* this is added to fix the margins in the flash video*/
+ /* .responsive-vertical-hub #embedDiv0{
+	 height:19px; 
+	position: relative;
+	padding-bottom:56.25%;
+}  */
+
+.responsive-vertical-hub .player-info #embedDiv {	
+	margin: auto;   
+	position: absolute;   
+	top:0;
+	bottom:0; 
+	left:0; 
+	right:0;
+	padding-bottom:56.25%;
+}
+#embedDiv0:has(#embedDiv){
+	height:19px
+}
+
+.responsive-vertical-hub .tpReleaseList { 
+	width:100%; 
+	height:100%; 
+}
+
+.responsive-vertical-hub .tpReleaseList .releaseListThumb{
+	float: none;
+}
+.responsive-vertical-hub .tpReleaseList > .tpGrid {
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin: 0px 0px 0px 0px !important;
+}
+
+.responsive-vertical-hub .tpRelease {
+	display: block;
+	width: 215px !important;
+	border-bottom: 1px dotted #cccccc;
+	background-image: none !important;
+	padding-left: 0px !important;
+	float: left;
+	height: auto !important;
+}
+
+.responsive-vertical-hub .tpGrid .tpInfo { 
+	width: 100%; 
+	height: auto !important;
+	padding: 0px;
+	display: block;
+}
+
+.responsive-vertical-hub .tpRelease > a {
+	height: auto !important;
+	position: relative;
+}
+
+
+.responsive-vertical-hub .tpThumbnail {
+	float: left;
+	width: 54px !important;
+	height: 30px !important;
+}
+
+.responsive-vertical-hub .tpMetadata {
+	display: block;
+	height: auto !important;
+	width: 120px !important;
+	overflow: auto !important;
+	position: relative;
+}
+.responsive-vertical-hub  .tpReleaseList .tpGroup {
+	position: relative !important;
+}
+.responsive-vertical-hub .tpReleaseList .tpRelease .tpInfo .tpMetadata {
+	float: none !important;
+	margin-left: 0;
+}
+/** BEGIN OF BUG FIX: in IE9, medium vertical hub player releaes list do not show video title */
+.responsive-vertical-hub .tpMetadata{
+	top:auto!important; 
+	right:auto!important; 
+	bottom:auto!important; 
+	position:static \0/IE9 !important;
+}
+.responsive-vertical-hub  .tpReleaseList .tpGroup{
+	top:auto!important; 
+	right:auto!important; 
+	bottom:auto!important; 
+	left:auto!important; 
+	*left:0px!important;
+} 
+/** END OF BUG FIX: in IE9, medium vertical hub player releaes list do not show video titles*/
+.responsive-vertical-hub  .tpReleaseList .tpRow .tpGroup { 
+	left:129px!important; 
+}
+/* === END Medium Vertical Hub Player === */
+
+/**BEGIN OF BUG FIX: when the cursor move over the release list, in IE7, the cursor does not become a hand*/
+.ie7 .tpRelease a{
+	cursor:pointer;
+}
+/**END OF BUG FIX: when the cursor move over the release list, in IE7, the cursor does not become a hand*/
+
+/**BEGIN OF BUG FIX: The relese list title font issue with video player in IE7, font does not look as sharp*/
+.tpGradient {
+    filter: none;
+}
+/**END OF BUG FIX: The relese list title font issue with video player in IE7, font does not look as sharp*/
+/* fix for play button starting offset */
+.responsive-vertical-hub #embedDiv canvas {
+    display:block;
+}
+.responsive-vertical-hub .clipInfo {
+	height: auto;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 16px 21px 16px;
+	text-align: left;
+	width: auto;
+}
+.responsive-vertical-hub .clipInfoTitle {
+	font-family:"Cambria",Georgia,serif; 
+	font-size:120%; 
+	font-style:italic; 
+	font-weight:bold;
+	margin: 0;
+	padding:0px 8px 0px 0px;
+	text-transform:none;
+}
+.responsive-vertical-hub .clipdescription {
+	font-style:italic;
+	padding:0 8px 13px 0px;
+	font-family:"Cambria",Georgia,serif;
+	font-size:100%;
+	font-weight:normal;
+	line-height:140%;
+	text-transform:none;
+}
+.responsive-vertical-hub .clipdescription p {
+	font-size:100%;
+}
+.responsive-vertical-hub .fancyexpand {
+	background-image:url("../images/expand_blue_11_11.gif");
+	background-repeat:no-repeat;
+	background-position:0 1px;
+	display:block;
+	font-family:"Cambria",Georgia,serif;
+	font-size:80%;
+	font-style:normal;
+	font-weight:bold;
+	padding-bottom:0;
+	padding-left:18px;
+	text-transform:none;
+}
+.responsive-vertical-hub .fancyexpand a {
+	color:#0F57C2;
+	cursor:pointer;
+}	
+.responsive-vertical-hub .fancycollapse {
+	background-image:url("../images/collapse_blue_11_11.gif");
+	background-repeat:no-repeat;
+	background-position:0 1px;
+	display:block;
+	font-family:"Cambria",Georgia,serif;
+	font-size:80%;
+	font-style:normal;
+	font-weight:bold;
+	padding-bottom:0;
+	padding-left:18px;
+	text-transform:none;
+}
+.responsive-vertical-hub .fancycollapse a {
+	color:#0F57C2; 
+	cursor:pointer;
+}	
+.responsive-vertical-hub .expandContent {
+	display:none;
+	padding-left:18px;
+	color:#666666;
+	font-family: "Cambria",Georgia,serif;
+	font-size:80%;
+	font-style:normal;
+	font-weight:normal;
+	line-height:125%; 
+	margin-bottom:8px; 
+	text-transform:none;
+}
+.responsive-vertical-hub .expandContent p {
+	font-size:100%; 
+	line-height:125%;
+}
+.responsive-vertical-hub .legalinfo{
+	display:none;
+	padding:0px 0px 6px 0px;
+}
+.responsive-vertical-hub .legal{
+	color:#666666;
+	font-family:"Cambria",Georgia,serif;
+	font-size:80%;
+	font-style:normal;
+	font-weight:normal;
+	line-height:125%;
+	margin-bottom:5px;
+	text-transform:none;
+	padding:0px;
+}
+.responsive-vertical-hub .clear-both {
+	clear:both;
+}
+
+.responsive-vertical-hub a.overlayPlayButton {
+	width: 100px;
+	height: 100px;
+	font-size: 72px;
+	text-decoration: none; 
+	color: white;
+	background: url('../images/playOverlay.png');
+}
+.responsive-vertical-hub .loadingIndicator {
+	width: 98px;	
+	height: 20px;	
+	margin-left: -50px; 
+	margin-top: -10px;
+	border: 1px solid white;
+	color: white;
+	font-size: 77%;	
+	line-height: 18px;	
+	background: black;	
+	font-family: Helvetica, Arial, sans-serif;	
+	text-align: center;
+}
+.responsive-vertical-hub .cardOvelay{
+	text-align:center; 
+	float:left;
+}
+
+
+.drop-down{
+	display:none;
+}
+.responsive-vertical-hub .tpReleaseList > .tpGrid::-webkit-scrollbar-thumb{
+	background-color:#808080!important;
+}
+@media (max-width:536px) and (min-width:760px) {
+	.responsive-vertical-hub .release-info{
+		height:400px;
+	}
+}
+@media(max-width: 536px){
+	.responsive-vertical-hub .player-info{
+		width:100%;
+		width: 100%;
+		min-width:0;
+		margin-left:0;
+		margin-right:0;
+		padding: 0;
+	}
+	/* .responsive-vertical-hub .player-info #embedDiv{
+		width:100%;
+		height: 56.25vw;
+	} */
+	.responsive-vertical-hub .release-info{		
+		width:0px;
+		height:0px !important;
+		display: none;
+	}
+	.responsive-vertical-hub .drop-down{
+		width:100%;
+		display:block;
+		padding:10px 8px 20px 8px;
+		margin:0;
+		border-top:1px solid #DBDBDB;
+		text-align:center;
+		box-sizing:border-box;
+	}
+	.responsive-vertical-hub .drop-down select{
+		width:100%;
+		padding:10px;
+		margin:0;
+		font-family:Helvetica, Arial, sans-serif;
+		font-size:82%;
+		font-weight:bold;
+		overflow:hidden; 
+		white-space:nowrap; 
+		text-overflow:ellipsis;
+	}
+}
+
+@media(max-width:320px)
+{
+	.responsive-vertical-hub{
+		width:288px;
+	}
+}
+
+/* CSS code for related presentation of Vertical hub video like Half and small width */
+.small-vertical-hub-video{
+		width:304px;
+		float:right;
+        margin-left:16px;
+	}
+
+@media(max-width: 504px){
+	.small-vertical-hub-video{
+		width:100%;
+		float:none;
+		margin-left:0px;
+	}
+}
+.mid-vertical-hub-video{
+	width:50%;
+	min-width:304px;
+	float:right;
+    margin-left:16px;
+}
+.mid-vertical-hub-video.inline-bottom-pad{
+	padding-bottom:0px!important;
+}
+@media(max-width: 504px) {
+	.mid-vertical-hub-video{
+		width:100%;
+		float:none;
+		margin-left:0px;
+	}
+}
+
+.small-vertical-hub-video .responsive-vertical-hub .player-info{
+		  width: 100%;
+		  min-width:0;
+		  margin-left:0;
+		  margin-right:0;
+		  padding: 0;
+	}
+
+ .small-vertical-hub-video .responsive-vertical-hub .release-info{		
+		width:0px;
+		height:0px !important;
+	}
+ .small-vertical-hub-video .drop-down{
+		width:100%;
+		display:block;
+		padding:10px 8px 20px 8px;
+		margin:0;
+		border-top:1px solid #DBDBDB;
+		text-align:center;
+		box-sizing:border-box;
+	}
+ .small-vertical-hub-video .drop-down select{
+		width:100%;
+		padding:10px;
+		margin:0;
+		font-family:Helvetica, Arial, sans-serif;
+		font-size:82%;
+		font-weight:bold;
+		overflow:hidden; 
+		white-space:nowrap; 
+		text-overflow:ellipsis;
+	}
+
+.mid-vertical-hub-video .responsive-vertical-hub .player-info{
+		width:100%;		  
+		min-width:0;
+		margin-left:0;
+		margin-right:0;
+		padding: 0;
+	}
+
+.mid-vertical-hub-video .responsive-vertical-hub .release-info{		
+		width:0px;
+		height:0px !important;
+	}
+.mid-vertical-hub-video .drop-down{
+		width:100%;
+		display:block;
+		padding:10px 8px 20px 8px;
+		margin:0;
+		border-top:1px solid #DBDBDB;
+		text-align:center;
+		box-sizing:border-box;
+	}
+.mid-vertical-hub-video .drop-down select{
+		width:100%;
+		padding:10px;
+		margin:0;
+		font-family:Helvetica, Arial, sans-serif;
+		font-size:82%;
+		font-weight:bold;
+		overflow:hidden; 
+		white-space:nowrap; 
+		text-overflow:ellipsis;
+	}
+
+/* End of related presentation CSS code*/
+
+/***** End of Responsive Vertical Hub Player *****/
+
+
+/***** Start of Responsive Horizontal Hub Player *****/
+
+.responsive-horizontal-hub {
+	margin: 0px auto 20px auto;
+	width:100%; 
+	background-color:#EEEEEE; 
+	max-width:704px;
+	min-width:288px;
+}
+.responsive-horizontal-hub .player-info {
+	background-color:#EEEEEE;
+}
+.responsive-horizontal-hub .clipInfo {
+	height: auto;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 16px 18px 16px;
+	text-align: left; 
+	width: auto; 
+	display: block; 
+}
+.responsive-horizontal-hub .clipInfoTitle {
+	font-family:"Cambria",Georgia,serif; 
+	font-size:120%; 
+	font-style:italic; 
+	font-weight:bold;
+	margin: 0;
+	padding:0px 8px 0px 0px;
+	text-transform:none;
+}
+.responsive-horizontal-hub .clipdescription {
+	font-style:italic;
+	padding:0 8px 13px 0px;
+	font-family:"Cambria",Georgia,serif;
+	font-size:100%;
+	font-weight:normal;
+	line-height:140%;
+	text-transform:none;
+}
+.responsive-horizontal-hub .clipdescription p {
+	font-size:100%;
+}
+.responsive-horizontal-hub .fancyexpand {
+	background-image:url("../images/expand_blue_11_11.gif");
+	background-repeat:no-repeat;
+	background-position:0 1px;
+	display:block;
+	font-family:"Cambria",Georgia,serif;
+	font-size:80%;
+	font-style:normal;
+	font-weight:bold;
+	padding-bottom:0;
+	padding-left:18px;
+	text-transform:none; zoom:1;
+}
+.responsive-horizontal-hub .fancyexpand a {
+	color:#0F57C2;
+	cursor:pointer;
+}	
+.responsive-horizontal-hub .fancycollapse {
+	background-image:url("../images/collapse_blue_11_11.gif");
+	background-repeat:no-repeat;
+	background-position:0 1px;
+	display:block;
+	font-family:"Cambria",Georgia,serif;
+	font-size:80%;
+	font-style:normal;
+	font-weight:bold;
+	padding-bottom:0;
+	padding-left:18px;
+	text-transform:none; 
+	zoom:1;
+}
+.responsive-horizontal-hub .fancycollapse a {
+	color:#0F57C2;
+	cursor:pointer;
+}	
+.responsive-horizontal-hub .expandContent {
+	display:none;
+	padding-left:18px;
+	color:#666666;
+	font-family: "Cambria",Georgia,serif;
+	font-size:80%;
+	font-style:normal;
+	font-weight:normal;
+	line-height:125%;
+	margin-bottom:8px;
+	text-transform:none;
+}
+.responsive-horizontal-hub .expandContent p {font-size:100%;line-height:125%;}
+.responsive-horizontal-hub .legalinfo{display:block;padding:0px 0px 6px 0px;}
+.responsive-horizontal-hub .legal{color:#666666;font-family:"Cambria",Georgia,serif;font-size:80%;font-style:normal;font-weight:normal;line-height:125%;margin-bottom:9px;text-transform:none;padding:0px;}
+.responsive-horizontal-hub .clear-both {clear:both;}
+/*.responsive-horizontal-hub .player { margin:0px 0px 8px 1px;}*/
+.responsive-horizontal-hub a.overlayPlayButton {width: 100px;height: 100px;font-size: 72px;text-decoration: none; color: white;background: url('../images/playOverlay.png');}
+.responsive-horizontal-hub .loadingIndicator {width: 98px;	height: 20px;	margin-left: -50px; margin-top: -10px;border: 1px solid white;color: white;font-size: 77%;	line-height: 18px;	background: black;	font-family: Helvetica, Arial, sans-serif;	text-align: center;}
+.responsive-horizontal-hub .cardOvelay{text-align:center; float:left;}
+.responsive-horizontal-hub .player-info #embedDiv {width:100%;}
+
+.responsive-horizontal-hub .release-info {
+  width: 100%;
+  height: 173px;
+}
+
+.responsive-horizontal-hub .tpReleaseList {
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.responsive-horizontal-hub .tpReleaseList .releaseListThumb{
+  float: none;
+}
+.responsive-horizontal-hub .tpReleaseList > .tpGrid {
+  display: table; 
+  overflow-x: auto !important;
+  /*width: 250% !important;*/
+  margin: 0px 0px 0px 0px !important;
+  /*
+  position: static !important;
+  */
+  white-space: nowrap;
+}
+
+.responsive-horizontal-hub .tpRelease {
+  position: static !important;
+  height: 158px !important;
+  width: 140px !important;
+  border-bottom: 1px dotted #cccccc;
+  border-right: 1px dotted #cccccc;
+  display: inline-block;
+  *display: inline;
+  background-image: none !important;
+  padding-left: 0px !important;
+  float: none !important;
+}
+
+.responsive-horizontal-hub .tpRelease a {
+  position: static !important;
+  display: inline-block !important;
+  width: auto !important;
+  height: 100% !important;
+}
+
+.responsive-horizontal-hub .tpGrid .tpInfo { 
+  width: 128px !important;
+  height: 100%;
+  padding: 5px;
+}
+
+.responsive-horizontal-hub .tpThumbnail {
+  float: none !important;
+  width: 80px !important;
+  height: 45px !important;
+}
+
+.responsive-horizontal-hub .tpMetadata {
+  height: 100% !important;
+  width: 120px !important;
+  margin: 5px !important;
+  white-space: normal;
+}
+.drop-down{
+	display:none;
+}
+
+.responsive-horizontal-hub .player-info #embedDiv {	
+	margin: auto;   
+	position: absolute;   
+	top:0;
+	bottom:0; 
+	left:0; 
+	right:0;
+	padding-bottom: 56.25%; 
+	
+}
+
+/* Commented this and added below. this is to resolve full screen issue in chrome */
+/* .responsive-horizontal-hub .tpPlayer .player{
+	padding-bottom:56.25%;
+	height:19px;
+	position:relative;
+}  */
+/* .responsive-horizontal-hub .tpPlayer .player{
+	padding-bottom:56.25%;
+	height:0px;
+	position:static !important;
+} */
+
+
+@media(max-width: 480px){
+	.responsive-horizontal-hub .player-info{
+		width:100%;
+		width: 100%;
+		min-width:0;
+		margin-left:0;
+		margin-right:0;
+		padding: 0;
+	}
+	
+	.responsive-horizontal-hub .release-info{		
+		width:0px;
+		height:0px;
+		display: none;
+	}
+
+	.responsive-horizontal-hub .drop-down{
+		width:100%;
+		display:block;
+		padding:10px 8px 20px 8px;
+		margin:0;
+		border-top:1px solid #DBDBDB;
+		text-align:center;
+		box-sizing:border-box;
+	}
+	.responsive-horizontal-hub .drop-down select{
+		width:100%;
+		padding:10px;
+		margin:0;
+		font-family:Helvetica, Arial, sans-serif;
+		font-size:82%;
+		font-weight:bold;
+		overflow:hidden; 
+		white-space:nowrap; 
+		text-overflow:ellipsis;
+	}
+}
+
+@media(max-width:320px)
+{
+	.responsive-horizontal-hub{
+		width:288px;
+	}
+}
+
+/* CSS code for Horizontal hub related presentation like Half and small width video */
+.small-horizontal-hub-video{
+		width:304px;
+		float:right;
+        margin-left:16px;
+	}
+
+@media(max-width: 504px){
+	.small-horizontal-hub-video{
+		width:100%;
+		float:none;
+		margin-left:0px;
+	}
+}
+.mid-horizontal-hub-video{
+	width:50%;
+	min-width:304px;
+	float:right;
+    margin-left:16px;
+}
+@media(max-width: 504px) {
+	.mid-horizontal-hub-video{
+		width:100%;
+		float:none;
+		margin-left:0px;
+	}
+.mid-horizontal-hub-video .release-info{		
+		width:0px;
+		height:0px;
+	}
+.mid-horizontal-hub-video .drop-down{
+		width:100%;
+		display:block;
+		padding:10px 8px 20px 8px;
+		margin:0;
+		border-top:1px solid #DBDBDB;
+		text-align:center;
+		box-sizing:border-box;
+	}
+.mid-horizontal-hub-video .drop-down select{
+		width:100%;
+		padding:10px;
+		margin:0;
+		font-family:Helvetica, Arial, sans-serif;
+		font-size:82%;
+		font-weight:bold;
+		overflow:hidden; 
+		white-space:nowrap; 
+		text-overflow:ellipsis;
+	}
+}
+
+ .small-horizontal-hub-video .responsive-horizontal-hub .release-info{		
+	width:0px;
+	height:0px;
+}
+ .small-horizontal-hub-video .drop-down{
+	width:100%;
+	display:block;
+	padding:10px 8px 20px 8px;
+	margin:0;
+	border-top:1px solid #DBDBDB;
+	text-align:center;
+	box-sizing:border-box;
+}
+ .small-horizontal-hub-video .drop-down select{
+	width:100%;
+	padding:10px;
+	margin:0;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:82%;
+	font-weight:bold;
+	overflow:hidden; 
+	white-space:nowrap; 
+	text-overflow:ellipsis;
+}
+
+.mid-horizontal-hub-video .responsive-horizontal-hub .player-info{
+	  width: 100%;
+	  min-width:0;
+	  margin-left:0;
+	  margin-right:0;
+	  padding: 0;
+}
+ .mid-horizontal-hub-video .responsive-horizontal-hub .player-info #embedDiv{
+	width:100%;
+}
+
+@media(min-width: 505px){
+	.mid-horizontal-hub-video .responsive-horizontal-hub .release-info {
+		width: 100%;
+		height: 173px;
+	}
+}
+
+
+/* End of related presentation CSS code */
+
+/***** End of responsive Horizontal Hub Player *****/
+
+.tpGroup table{
+	width:auto !important;
+}
+
+.content-body-slider .player-info div[id$='standby']{
+	position:static!important;
+}
+/* End of Video CSS Code */
+
+/* Start of foundation CSS Date - 14/11/2016*/
+  
+.foundation .video-responsive-single #embedDiv { height: 1em; }
+.foundation .responsive-vertical-hub #embedDiv, .responsive-horizontal-hub #embedDiv { height: 1.1875em; }
+/*Added to hide the helloDiv needed to make the horizontal hub but gave a not ideal experience for accessibility*/
+.foundation #helloDiv { display:none; }
+/*.foundation .tpPlayer div { top:0; }*/
+.foundation .release-info { border: none; border-left: .0625em solid #DBDBDB; border-top: .0625em solid #DBDBDB; margin: 0; overflow-x: hidden; overflow-y: hidden; }
+.foundation .tpBackground { display: none; }
+.foundation .tpReleaseSelected { background-color: #FFFFFF; }
+.foundation .tpRelease > a:hover { background-color: #FFFFFe; }
+.foundation .tpRelease > a:active, .tpRelease > a:focus { text-decoration:none; }
+.foundation .tpTitle {
+  text-align: left;
+  color: #0F57C2;
+  font-size: .75em !important;
+  font-weight: normal;
+  font-family: Fidelity Sans, Helvetica, sans-serif !important;
+  padding: 0 0 .375em 0 !important;
+}
+.foundation #releaseListDiv  h2.tpTitle{
+  width:100%!important; 
+  padding: 0 0 .5em !important;
+}
+.foundation .tpTitle .tpDuration { color: #666666; }
+.foundation .tpReleaseSelected .tpTitle {
+  color: #000000;
+  font-weight: 700;
+}
+.foundation #clipInfoDiv a { text-decoration:none; }
+
+
+/** Begin responsive video **/
+
+/** The first three classes here are for the responsive resizing of the player.
+    The rest are for formatting the elements, text, and legal dislaimer portions.
+ */
+
+.foundation .video-responsive-single {
+  font-size: 1rem;
+    max-width:44em;
+    background-color:#EEE;
+    padding:0 .625em 0 .625em;
+  min-width:18em; 
+  margin:0 auto 0 auto; 
+}
+.foundation .video-responsive-single video{
+  background-color:#EEE!important;
+}
+.foundation .video-responsive-single .player #embedDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 25.9375em; /* TODO Add in reasoning/calculation */
+    margin: 0;
+}
+.foundation .video-responsive-single .tpPlayer{
+  border-left:.0625em solid #EEE;
+}
+.foundation .video-responsive-single .tpPlayer .player{
+  margin-top:-.1875em;
+}
+/* Commented this below class .this is to resolve full screen issue in chrome
+.video-responsive-single .player {
+    position: relative!important;
+    padding-bottom: 56.25%; /* 9 divided by 16 
+    height: 0;
+    max-width: 100%;
+} */
+.foundation .video-responsive-single .clipInfo {
+    height: auto;
+    margin: 0;
+    padding: .5em 1em 1.3125em 1em;
+    text-align: left;
+    width: auto;
+}
+.foundation .video-responsive-single .clipInfoTitle {
+    font-family: Fidelity Sans, Helvetica, sans-serif;
+    font-size:1.125em;
+    font-style:normal;
+    font-weight:700;
+    margin: 0;
+    padding:0;
+    text-transform:none;
+}
+.foundation .video-responsive-single .clipdescription {
+    font-style:normal;
+    padding:0 0 .8125em 0;
+    font-family: Fidelity Sans, Helvetica, sans-serif;
+    font-size:1em;
+    font-weight:normal;
+    line-height:1.375;
+    text-transform:none;
+}
+.foundation .video-responsive-single .clipdescription p {
+    font-size:1em;
+}
+.foundation .video-responsive-single .fancyexpand {
+    background-image:url("../images/expand_blue_11_11.gif");
+    background-repeat:no-repeat;
+    background-position:0 .125em;
+    display:block;
+    font-family: Fidelity Sans, Helvetica, sans-serif;
+    font-size:.75em;
+    font-style:normal;
+    font-weight:700;
+    padding-bottom:0;
+    padding-left:1.25em;
+    text-transform:none;
+}
+.foundation .video-responsive-single .fancyexpand a {
+    color:#0F57C2;
+    cursor:pointer;
+}
+.foundation .video-responsive-single .fancycollapse {
+    background-image:url("../images/collapse_blue_11_11.gif");
+    background-repeat:no-repeat;
+    background-position:0 .125em;
+    display:block;
+    font-family: Fidelity Sans, Helvetica, sans-serif;
+    font-size:.75em;
+    font-style:normal;
+    font-weight:700;
+    padding-bottom:0;
+    padding-left:1.25em;
+    text-transform:none;
+}
+.foundation .video-responsive-single .fancycollapse a {
+    color:#0F57C2;
+    cursor:pointer;
+}
+.foundation .video-responsive-single .expandContent {
+    display:none;
+    padding-left:1.25em;
+    color:#666666;
+    font-family: Fidelity Sans, Helvetica, sans-serif !important;
+    font-size:.75em;
+    font-style:normal;
+    font-weight:normal;
+    line-height:1.25;;
+    margin-bottom:.5em;
+    text-transform:none;
+}
+.foundation .video-responsive-single .expandContent p {
+    font-size:1em;
+    line-height:1.25;
+}
+.foundation .video-responsive-single .legalinfo{
+    display:none;
+    padding:0 0 .375em 0;
+}
+.foundation .video-responsive-single .legal {
+    color:#666666;
+    font-family: Fidelity Sans, Helvetica, sans-serif !important;;
+    font-size:.75em;
+    line-height:1.25;
+    margin-bottom:.3125em;
+    text-transform:none;
+    padding:0;
+}
+.foundation .video-responsive-single a.overlayPlayButton {
+    width: 6.25em;
+    height: 6.25em;
+    font-size: 4.5em;
+    text-decoration: none;
+    color: white;
+    background: url('../images/playOverlay.png');
+}
+.foundation .video-responsive-single .loadingIndicator {
+    width: 6.125em;
+    height: 1.25em;
+    margin-left: -3.125em;
+    margin-top: -.625em;
+    border: .0625em solid white;
+    color: white;
+    font-size: .75em;
+    line-height: 1.125em;
+    background: black;
+    font-family: Fidelity Sans, Helvetica, sans-serif !important;
+    text-align: center;
+}
+.foundation .video-responsive-single .cardOvelay{
+    text-align:center;
+    float:left;
+}
+.foundation .video-responsive-single #embedDiv{
+  margin: auto;   
+  position: absolute;   
+  top:0;
+  bottom:0; 
+  left:0; 
+  right:0;
+  padding-bottom: 56.25%;
+}
+
+/* Commented this below class and added again below it. this is to resolve full screen issue
+.video-responsive-single .tpPlayer .player {
+position : relative !important;
+height:0px;
+} */
+/* .video-responsive-single .tpPlayer .player {
+position : inherit;
+} */
+.foundation .promo-group-video .video-responsive-single{
+    background-color: transparent;
+    padding:0;
+}
+.foundation .promo-group-video .video-responsive-single .clipInfo {
+  padding: .5em .5em .75em 0 !important;
+}
+.foundation .promo-group-video .video-responsive-single .legal {
+  padding: 0 0 .5625em !important;
+}
+.foundation .promo-group-video .video-responsive-single .clipInfoTitle {
+  font-size: 1em !important;
+  line-height: 1.375 !important;
+  padding: 0 0 .1875em !important;
+}
+.foundation .promo-group-video .video-responsive-single .tpPlayer {
+  overflow : inherit!important;
+}
+@media(max-width:320px) {
+  .video-responsive-single {
+    width:18em;
+    padding:0;
+  }
+}
+/* CSS for related presentation (Half Width and Small width video) */
+.foundation .small-video-right-side{
+  font-size: 1rem;
+  float:right;
+  width:19em;
+  clear:both;
+    margin:.3125em 2.5% .625em;
+}
+.foundation .half-width-single-video{
+  font-size: 1rem;
+  float:right;
+  width:50%;
+  clear:both;
+    margin: .3125em 2.5% .625em;
+  min-width:19.25em;
+}
+@media (max-width:607px) and (min-width:569px) {
+  .foundation .half-width-single-video{
+    width:19em;
+  }
+}
+@media (max-width:568px) {
+  .foundation .half-width-single-video{
+    width:100%!important;
+        margin:0 0 .625em 0;
+  }
+}
+@media (max-width:568px) {
+  .foundation .small-video-right-side{
+    width:100%!important;
+        margin:0 0 .625em 0;
+  }
+}
+/* End of related video presentation */
+
+
+/***** Start of Responsive Vertical Hub Player *****/
+.foundation .responsive-vertical-hub {
+  font-size: 1rem;
+  text-align:center; 
+  margin:0 auto 1.25em auto; 
+  max-width: 57.4375em; 
+  background-color:#EEEEEE; 
+  width:100%;
+  min-width:18em;
+}
+.foundation .responsive-vertical-hub:after { 
+  display: block;
+  content: '';
+}
+.foundation .responsive-vertical-hub .player-info { 
+  background-color:#EEEEEE; 
+  margin:0; 
+  padding:0;   
+  vertical-align:top;
+  width:100%;
+  float:left;
+  margin-right:-13.4375em;
+  padding-right:13.4375em;
+  overflow-x:hidden;
+  box-sizing:border-box;
+  
+}
+.foundation .responsive-vertical-hub .release-info {  
+  width: 13.375em;
+  box-sizing:border-box;
+  float:left;
+}
+.foundation .responsive-vertical-hub .PlayerLabelFont{
+  float:right;
+}
+/* added on 05/11/2015 */
+/* Commented this below class and added again below it. this is to resolve full screen issue in chrome */
+ /* .responsive-vertical-hub .tpPlayer .player{
+  position:relative;
+  height:0px;
+  padding-bottom:56.25%;
+}  */
+
+/* this is added to fix the margins in the flash video*/
+ /* .responsive-vertical-hub #embedDiv0{
+   height:19px; 
+  position: relative;
+  padding-bottom:56.25%;
+}  */
+
+.foundation .responsive-vertical-hub .player-info #embedDiv { 
+  margin: auto;   
+  position: absolute;   
+  top:0;
+  bottom:0; 
+  left:0; 
+  right:0;
+  padding-bottom:56.25%;
+}
+#embedDiv0:has(#embedDiv){
+  height:1.1875em;
+}
+.foundation .responsive-vertical-hub .tpReleaseList { 
+  width:100%; 
+  height:100%; 
+}
+.foundation .responsive-vertical-hub .tpReleaseList .releaseListThumb{
+  float: none;
+}
+.foundation .responsive-vertical-hub .tpReleaseList > .tpGrid {
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0 !important;
+}
+.foundation .responsive-vertical-hub .tpRelease {
+  display: block;
+  width: 13.4375em !important;
+  border-bottom: .0625em dotted #cccccc;
+  background-image: none !important;
+  padding-left: 0 !important;
+  float: left;
+  height: auto !important;
+}
+.foundation .responsive-vertical-hub .tpGrid .tpInfo { 
+  width: 100%; 
+  height: auto !important;
+  padding: 0;
+  display: block;
+}
+.foundation .responsive-vertical-hub .tpRelease > a {
+  height: auto !important;
+  position: relative;
+}
+.foundation .responsive-vertical-hub .tpThumbnail {
+  float: left;
+  width: 3.375em !important;
+  height: 1.875em !important;
+}
+.foundation .responsive-vertical-hub .tpMetadata {
+  display: block;
+  height: auto !important;
+  width: 7.5em !important;
+  overflow: auto !important;
+  position: relative;
+}
+.foundation .responsive-vertical-hub  .tpReleaseList .tpGroup {
+  position: relative !important;
+}
+.foundation .responsive-vertical-hub .tpReleaseList .tpRelease .tpInfo .tpMetadata {
+  float: none !important;
+  margin-left: 0;
+}
+/** BEGIN OF BUG FIX: in IE9, medium vertical hub player releaes list do not show video title */
+.foundation .responsive-vertical-hub .tpMetadata{
+  top:auto!important; 
+  right:auto!important; 
+  bottom:auto!important; 
+  position:static \0/IE9 !important;
+}
+.foundation .responsive-vertical-hub  .tpReleaseList .tpGroup{
+  top:auto!important; 
+  right:auto!important; 
+  bottom:auto!important; 
+  left:auto!important; 
+  *left:0!important;
+} 
+/** END OF BUG FIX: in IE9, medium vertical hub player releaes list do not show video titles*/
+.foundation .responsive-vertical-hub  .tpReleaseList .tpRow .tpGroup { 
+  left:8.0625em!important; 
+}
+/* === END Medium Vertical Hub Player === */
+
+/**BEGIN OF BUG FIX: when the cursor move over the release list, in IE7, the cursor does not become a hand*/
+.ie7 .tpRelease a{
+  cursor:pointer;
+}
+/**END OF BUG FIX: when the cursor move over the release list, in IE7, the cursor does not become a hand*/
+
+/**BEGIN OF BUG FIX: The relese list title font issue with video player in IE7, font does not look as sharp*/
+.foundation .tpGradient {
+    filter: none;
+}
+/**END OF BUG FIX: The relese list title font issue with video player in IE7, font does not look as sharp*/
+/* fix for play button starting offset */
+.foundation .responsive-vertical-hub #embedDiv canvas {
+    display:block;
+}
+.foundation .responsive-vertical-hub .clipInfo {
+  height: auto;
+  margin: 0;
+  padding: .5em 1em 1.3125em 1em;
+  text-align: left;
+  width: auto;
+}
+.foundation .responsive-vertical-hub .clipInfoTitle {
+  font-family: Fidelity Sans, Helvetica, sans-serif; 
+  font-size:1.125em; 
+  font-style:normal; 
+  font-weight:700;
+  margin: 0;
+  padding:0;
+  text-transform:none;
+}
+.foundation .responsive-vertical-hub .clipdescription {
+  font-style:normal;
+  padding:0 0 .8125em 0;
+  font-family: Fidelity Sans, Helvetica, sans-serif;
+  font-size:1em;
+  font-weight:normal;
+  line-height:1.375em;
+  text-transform:none;
+}
+.foundation .responsive-vertical-hub .clipdescription p {
+  font-size:1em;
+}
+.foundation .responsive-vertical-hub .fancyexpand {
+  background-image:url("../images/expand_blue_11_11.gif");
+  background-repeat:no-repeat;
+  background-position:0 .125em;
+  display:block;
+  font-family: Fidelity Sans, Helvetica, sans-serif;
+  font-size:.75em;
+  font-style:normal;
+  font-weight:700;
+  padding-bottom:0;
+  padding-left:1.25em;
+  text-transform:none;
+}
+.foundation .responsive-vertical-hub .fancyexpand a {
+  color:#0F57C2;
+  cursor:pointer;
+} 
+.foundation .responsive-vertical-hub .fancycollapse {
+  background-image:url("../images/collapse_blue_11_11.gif");
+  background-repeat:no-repeat;
+  background-position:0 .125em;
+  display:block;
+  font-family: Fidelity Sans, Helvetica, sans-serif;
+  font-size:.75em;
+  font-style:normal;
+  font-weight:700;
+  padding-bottom:0;
+  padding-left:1.25em;
+  text-transform:none;
+}
+.foundation .responsive-vertical-hub .fancycollapse a {
+  color:#0F57C2; 
+  cursor:pointer;
+} 
+.foundation .responsive-vertical-hub .expandContent {
+  display:none;
+  padding-left:1.25em;
+  color:#666666;
+  font-family: Fidelity Sans, Helvetica, sans-serif;
+  font-size:.75em;
+  font-style:normal;
+  font-weight:normal;
+  line-height:1.25; 
+  margin-bottom:.5em; 
+  text-transform:none;
+}
+.foundation .responsive-vertical-hub .expandContent p {
+  font-size:1em; 
+  line-height:1.25;
+}
+.foundation .responsive-vertical-hub .legalinfo{
+  display:none;
+  padding:0 0 .375em 0;
+}
+.foundation .responsive-vertical-hub .legal{
+  color:#666666;
+  font-family: Fidelity Sans, Helvetica, sans-serif;
+  font-size:.75em;
+  font-style:normal;
+  font-weight:normal;
+  line-height:1.25;
+  margin-bottom:.3125em;
+  text-transform:none;
+  padding:0;
+}
+.foundation .responsive-vertical-hub .clear-both {
+  clear:both;
+}
+.foundation .responsive-vertical-hub a.overlayPlayButton {
+  width: 6.25em;
+  height: 6.25em;
+  font-size: 4.5em;
+  text-decoration: none; 
+  color: white;
+  background: url('../images/playOverlay.png');
+}
+.foundation .responsive-vertical-hub .loadingIndicator {
+  width: 6.125em; 
+  height: 1.25em; 
+  margin-left: -3.125em; 
+  margin-top: -.625em;
+  border: .0625em solid white;
+  color: white;
+  font-size: .75em; 
+  line-height: 1.125em; 
+  background: black;  
+  font-family: Fidelity Sans, Helvetica, sans-serif;  
+  text-align: center;
+}
+.foundation .responsive-vertical-hub .cardOvelay{
+  text-align:center; 
+  float:left;
+}
+.foundation .drop-down{
+  display:none;
+}
+.foundation .responsive-vertical-hub .tpReleaseList > .tpGrid::-webkit-scrollbar-thumb{
+  background-color:#808080!important;
+}
+@media (max-width:536px) and (min-width:760px) {
+  .responsive-vertical-hub .release-info{
+    height:25em;
+  }
+}
+@media(max-width: 536px){
+  .foundation .responsive-vertical-hub .player-info{
+    width:100%;
+    min-width:0;
+    margin-left:0;
+    margin-right:0;
+    padding: 0;
+  }
+  /* .responsive-vertical-hub .player-info #embedDiv{
+    width:100%;
+    height: 56.25vw;
+  } */
+  .foundation .responsive-vertical-hub .release-info{   
+    width:0;
+    height:0 !important;
+    display: none;
+  }
+  .foundation .responsive-vertical-hub .drop-down{
+    width:100%;
+    display:block;
+    padding:.625em .5em 1.25em .5em;
+    margin:0;
+    border-top:.0625em solid #DBDBDB;
+    text-align:center;
+    box-sizing:border-box;
+  }
+  .foundation .responsive-vertical-hub .drop-down select{
+    width:100%;
+    padding:.625em;
+    margin:0;
+    font-family: Fidelity Sans, Helvetica, sans-serif;
+    font-size:.75em;
+    font-weight:700;
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow:ellipsis;
+  }
+}
+@media(max-width:320px) {
+  .foundation .responsive-vertical-hub{
+    width:19em;
+  }
+}
+/* CSS code for related presentation of Vertical hub video like Half and small width */
+.foundation .small-vertical-hub-video {
+    font-size: 1rem;
+    width:19em;
+    float:right;
+        margin:.3125em 2.5% .625em;
+  }
+@media(max-width: 568px){
+  .foundation .small-vertical-hub-video {
+    width:100%;
+    float:none;
+    margin:0 0 .625em;
+  }
+  .foundation .mid-vertical-hub-video{
+    width:100%;
+    float:none;
+    margin:0 0 .625em;
+  }
+}
+.foundation .mid-vertical-hub-video{
+  font-size: 1rem;
+  width:50%;
+  min-width:19em;
+  float:right;
+    margin:.3125em 2.5% .625em;
+}
+.foundation .mid-vertical-hub-video.inline-bottom-pad{
+  padding-bottom:0!important;
+}
+.foundation .small-vertical-hub-video .responsive-vertical-hub .player-info{
+      width: 100%;
+      min-width:0;
+      margin-left:0;
+      margin-right:0;
+      padding: 0;
+  }
+.foundation .small-vertical-hub-video .responsive-vertical-hub .release-info{   
+    width:0;
+    height:0 !important;
+  }
+.foundation .small-vertical-hub-video .drop-down{
+    width:100%;
+    display:block;
+    padding:.625em .5em 1.25em .5em;
+    margin:0;
+    border-top:.0625em solid #DBDBDB;
+    text-align:center;
+    box-sizing:border-box;
+  }
+.foundation .small-vertical-hub-video .drop-down select{
+    width:100%;
+    padding:.625em;
+    margin:0;
+    font-family: Fidelity Sans, Helvetica, sans-serif;
+    font-size:.75em;
+    font-weight:700;
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow:ellipsis;
+  }
+.foundation .mid-vertical-hub-video .responsive-vertical-hub .player-info{
+    width:100%;     
+    min-width:0;
+    margin-left:0;
+    margin-right:0;
+    padding: 0;
+  }
+.foundation .mid-vertical-hub-video .responsive-vertical-hub .release-info{   
+    width:0;
+    height:0 !important;
+  }
+.foundation .mid-vertical-hub-video .drop-down{
+    width:100%;
+    display:block;
+    padding:.625em .5em 1.25em .5em;
+    margin:0;
+    border-top:.0625em solid #DBDBDB;
+    text-align:center;
+    box-sizing:border-box;
+  }
+.foundation .mid-vertical-hub-video .drop-down select{
+    width:100%;
+    padding:.625em;
+    margin:0;
+    font-family: Fidelity Sans, Helvetica, sans-serif;
+    font-size:.75em;
+    font-weight:700;
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow:ellipsis;
+  }
+/* End of related presentation CSS code*/
+
+
+/***** End of Responsive Vertical Hub Player *****/
+
+/***** Start of Responsive Horizontal Hub Player *****/
+.foundation .responsive-horizontal-hub {
+  font-size: 1rem;
+  margin: 0 auto 1.25em auto;
+  width:100%; 
+  background-color:#EEEEEE; 
+  max-width:44em;
+  min-width:18em;
+}
+.foundation .responsive-horizontal-hub .player-info {
+  background-color:#EEEEEE;
+}
+.foundation .responsive-horizontal-hub .clipInfo {
+  height: auto;
+  margin: 0;
+  padding: .5em 1em 1.125em 1em;
+  text-align: left; 
+  width: auto; 
+  display: block; 
+}
+.foundation .responsive-horizontal-hub .clipInfoTitle {
+  font-family: Fidelity Sans, Helvetica, sans-serif;
+  font-size:1.25em; 
+  font-style:normal; 
+  font-weight:400;
+  margin: 0;
+  padding:0;
+  text-transform:none;
+}
+.foundation .responsive-horizontal-hub .clipdescription {
+  font-family: Fidelity Sans, Helvetica, sans-serif;
+  font-size:1em;
+  line-height:1.375;
+  font-weight: 400; 
+  text-transform:none;
+  font-style:normal;
+  padding:0 0 .8125em 0;
+}
+.foundation .responsive-horizontal-hub .clipdescription p {
+  font-size:1em;
+}
+.foundation .responsive-horizontal-hub .fancyexpand {
+  background-image:url("../images/expand_blue_11_11.gif");
+  background-repeat:no-repeat;
+  background-position:0 .125em;
+  display:block;
+  font-family: Fidelity Sans, Helvetica, sans-serif;
+  font-size:.75em;
+  font-style:normal;
+  font-weight:700;
+  padding-bottom:0;
+  padding-left:1.25em;
+  text-transform:none; 
+  zoom:1;
+}
+.foundation .responsive-horizontal-hub .fancyexpand a {
+  color:#0F57C2;
+  cursor:pointer;
+} 
+.foundation .responsive-horizontal-hub .fancycollapse {
+  background-image:url("../images/collapse_blue_11_11.gif");
+  background-repeat:no-repeat;
+  background-position:0 .125em;
+  display:block;
+  font-family: Fidelity Sans, Helvetica, sans-serif;
+  font-size:.75em;
+  font-style:normal;
+  font-weight:700;
+  padding-bottom:0;
+  padding-left:1.25em;
+  text-transform:none; 
+  zoom:1;
+}
+.foundation .responsive-horizontal-hub .fancycollapse a {
+  color:#0F57C2;
+  cursor:pointer;
+} 
+.foundation .responsive-horizontal-hub .expandContent {
+  display:none;
+  padding-left:1.25em;
+  color:#666666;
+  font-family: Fidelity Sans, Helvetica, sans-serif;
+  font-size:0.625em;
+  font-style:normal;
+  font-weight:normal;
+  margin-bottom:5em;
+  text-transform:none;
+}
+.foundation .responsive-horizontal-hub .expandContent p {
+  font-family: Fidelity Sans, Helvetica, sans-serif; line-height:1.25;
+}
+.foundation .responsive-horizontal-hub .legalinfo {
+  display:block;
+  padding:0 0 .375em 0;
+}
+.foundation .responsive-horizontal-hub .legal {
+  color:#666666;
+  font-family: Fidelity Sans, Helvetica, sans-serif;
+  font-size:.75em;
+  font-style:normal;
+  font-weight:normal;
+  line-height:1.25;
+  margin-bottom:.5625em;
+  text-transform:none;
+  padding:0;
+}
+.foundation .responsive-horizontal-hub .clear-both {clear:both;}
+/*.responsive-horizontal-hub .player { margin:0 0 .5em, .0625em;}*/
+.foundation .responsive-horizontal-hub a.overlayPlayButton {width: 6.25em;height: 6.25em;font-size: 4.5em;text-decoration: none; color: white;background: url('../images/playOverlay.png');}
+.foundation .responsive-horizontal-hub .loadingIndicator {
+  width: 6.125em; 
+  height: 1.25em; 
+  margin-left: -3.125em; 
+  margin-top: -.625em;
+  border: .0625em solid white;
+  color: white;
+  font-size: .75em; 
+  line-height: 1.125em; 
+  background: black;  
+  font-family: Fidelity Sans, Helvetica, sans-serif;  
+  text-align: center;
+}
+.foundation .responsive-horizontal-hub .cardOvelay{text-align:center; float:left;}
+.foundation .responsive-horizontal-hub .player-info #embedDiv {width:100%;}
+.foundation .responsive-horizontal-hub .release-info {
+  width: 100%;
+  height: 10.8125em;
+}
+.foundation .responsive-horizontal-hub .tpReleaseList {
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.foundation .responsive-horizontal-hub .tpReleaseList .releaseListThumb{
+  float: none;
+}
+.foundation .responsive-horizontal-hub .tpReleaseList > .tpGrid {
+  display: table; 
+  overflow-x: auto !important;
+  /*width: 250% !important;*/
+  margin: 0 0 0 0 !important;
+  /*
+  position: static !important;
+  */
+  white-space: nowrap;
+}
+.foundation .responsive-horizontal-hub .tpRelease {
+  position: static !important;
+  height: 9.875em !important;
+  width: 8.75em !important;
+  border-bottom: .0625em dotted #cccccc;
+  border-right: .0625em dotted #cccccc;
+  display: inline-block;
+  *display: inline;
+  background-image: none !important;
+  padding-left: 0 !important;
+  float: none !important;
+}
+.foundation .responsive-horizontal-hub .tpRelease a {
+  position: static !important;
+  display: inline-block !important;
+  width: auto !important;
+  height: 100% !important;
+}
+.foundation .responsive-horizontal-hub .tpGrid .tpInfo { 
+  width: 8em !important;
+  height: 100%;
+  padding: .3125em;
+}
+.foundation .responsive-horizontal-hub .tpThumbnail {
+  float: none !important;
+  width: 5em !important;
+  height: 2.8125em !important;
+  margin: .3125em;
+}
+.foundation .responsive-horizontal-hub .tpMetadata {
+  height: 100% !important;
+  width: 7.5em !important;
+  margin: .3125em !important;
+  white-space: normal;
+}
+.foundation .drop-down{
+  display:none;
+}
+.foundation .responsive-horizontal-hub .player-info #embedDiv { 
+  margin: auto;   
+  position: absolute;   
+  top:0;
+  bottom:0; 
+  left:0; 
+  right:0;
+  padding-bottom: 56.25%; 
+  
+}
+/* Commented this and added below. this is to resolve full screen issue in chrome */
+/* .responsive-horizontal-hub .tpPlayer .player{
+  padding-bottom:56.25%;
+  height:19px;
+  position:relative;
+}  */
+/* .responsive-horizontal-hub .tpPlayer .player{
+  padding-bottom:56.25%;
+  height:0px;
+  position:static !important;
+} */
+@media(max-width: 480px){
+  .foundation .responsive-horizontal-hub .player-info{
+    width:100%;
+    width: 100%;
+    min-width:0;
+    margin-left:0;
+    margin-right:0;
+    padding: 0;
+  } 
+  .foundation .responsive-horizontal-hub .release-info{   
+    width:0;
+    height:0;
+    display: none;
+  }
+  .foundation .responsive-horizontal-hub .drop-down{
+    width:100%;
+    display:block;
+    padding:.625em .5em 1.25em .5em;
+    margin:0;
+    border-top:.0625em solid #DBDBDB;
+    text-align:center;
+    box-sizing:border-box;
+  }
+  .foundation .responsive-horizontal-hub .drop-down select{
+    width:100%;
+    padding:.625em;
+    margin:0;
+    font-family: Fidelity Sans, Helvetica, sans-serif;
+    font-size:.75em;
+    font-weight:700;
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow:ellipsis;
+  }
+}
+@media(max-width:320px) {
+  .foundation .responsive-horizontal-hub{
+    width:18em;
+  }
+}
+/* CSS code for Horizontal hub related presentation like Half and small width video */
+.foundation .small-horizontal-hub-video{
+    font-size: 1rem;
+    width:19em;
+    float:right;
+        margin:.3125em 2.5% .625em 2.5%;
+  }
+.foundation .mid-horizontal-hub-video{
+    font-size: 1rem;
+    width:50%;
+    min-width:19em;
+    float:right;
+    margin:.3125em 2.5% .625em 2.5%;
+  }
+@media(max-width: 568px){
+  .foundation .small-horizontal-hub-video{
+    width:100%;
+    float:none;
+    margin:0 0 .625em;
+  }
+  .foundation .mid-horizontal-hub-video{
+    width:100%;
+    float:none;
+    margin:0 0 .625em;
+  }
+  .foundation .mid-horizontal-hub-video .release-info{    
+    width:0;
+    height:0;
+  }
+  .foundation .mid-horizontal-hub-video .drop-down{
+    width:100%;
+    display:block;
+    padding:.625em .5em 1.25em .5em;
+    margin:0;
+    border-top:.0625em solid #DBDBDB;
+    text-align:center;
+    box-sizing:border-box;
+  }
+  .foundation .mid-horizontal-hub-video .drop-down select{
+    width:100%;
+    padding:.625em;
+    margin:0;
+    font-family:Fidelity Sans, Helvetica, sans-serif;
+    font-size:.75em;
+    font-weight:700;
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow:ellipsis;
+  }
+}
+.foundation .small-horizontal-hub-video .responsive-horizontal-hub .release-info{   
+  width:0;
+  height:0;
+}
+.foundation .small-horizontal-hub-video .drop-down{
+  width:100%;
+  display:block;
+  padding:.625em .5em 1.25em .5em;
+  margin:0;
+  border-top:.0625em solid #DBDBDB;
+  text-align:center;
+  box-sizing:border-box;
+}
+.foundation .small-horizontal-hub-video .drop-down select{
+  width:100%;
+  padding:.625em;
+  margin:0;
+  font-family:Fidelity Sans, Helvetica, sans-serif;
+  font-size:.75em;
+  font-weight:700;
+  overflow:hidden; 
+  white-space:nowrap; 
+  text-overflow:ellipsis;
+}
+.foundation .mid-horizontal-hub-video .responsive-horizontal-hub .player-info{
+    width: 100%;
+    min-width:0;
+    margin-left:0;
+    margin-right:0;
+    padding: 0;
+}
+.foundation  .mid-horizontal-hub-video .responsive-horizontal-hub .player-info #embedDiv{
+  width:100%;
+}
+@media(min-width: 568px){
+  .foundation .mid-horizontal-hub-video .responsive-horizontal-hub .release-info {
+    width: 100%;
+    height: 10.8125em;
+  }
+}
+/* End of related presentation CSS code */
+
+/***** End of responsive Horizontal Hub Player *****/
+.foundation .tpGroup table{
+  width:auto !important;
+}
+.foundation .content-body-slider .player-info div[id$='standby']{
+  position:static!important;
+}
+/* End of Video CSS Code */
+/*page template specific */
+
+#responsive-main.foundation .half-width-single-video {
+  margin: .3125em 5% .625em 2.5%;
+}
+#responsive-main.foundation .small-video-right-side {
+  margin: .3125em 5% .625em 2.5%;
+}
+#responsive-main.foundation .small-horizontal-hub-video{
+  margin:.3125em 5% .625em 2.5%;
+}
+#responsive-main.foundation .small-vertical-hub-video {
+  margin:.3125em 5% .625em 2.5%;
+}
+#responsive-main.foundation .mid-vertical-hub-video{
+  margin:.3125em 5% .625em 2.5%;
+}
+#responsive-main.foundation .mid-horizontal-hub-video{
+  margin:.3125em 5% .625em 2.5%;
+}
+#responsive-main.foundation .responsive-vertical-hub .tpReleaseList > .tpGrid {
+  margin: 0 !important;
+}
+#responsive-main.foundation .responsive-horizontal-hub .tpReleaseList > .tpGrid {
+  margin: 0 !important;
+}
+
+@media(max-width:568px) {
+  #responsive-main.foundation .half-width-single-video {
+    float: none; margin: 0 0 .625em; width: 100%;
+  }
+  #responsive-main.foundation .small-horizontal-hub-video { 
+    float: none; margin: 0 0 .625em; width: 100%;
+  }
+  #responsive-main.foundation .small-video-right-side {
+    float: none; margin: 0 0 .625em; width: 100%;
+  }
+  #responsive-main.foundation .small-vertical-hub-video {
+    float: none; margin:0 0 .625em; width: 100%;
+  }
+  #responsive-main.foundation .mid-vertical-hub-video{
+    float: none; margin:0 0 .625em; width: 100%;
+  }
+  #responsive-main.foundation .mid-horizontal-hub-video{
+    float: none; margin:0 0 .625em; width: 100%;
+  }
+}
+
+/* End of foundation CSS */
+
+/* CSS to hide Menu/Share for full screen video */
+.full-screen-single-video .tpCards{display:none!important;}
+.full-screen-single-video .tpMenu table, .full-screen-single-video .tpMenu canvas{display:none!important;}
